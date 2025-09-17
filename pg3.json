@@ -1,0 +1,863 @@
+[
+  {
+    "wine_name": "ZIBBIBO LIGHEA",
+    "producer": "DONNAFUGATA",
+    "denomination": "SICILIA DOC 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Zibbibo",
+      "terroir": "Pantelleria",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "ISLAND VIBE FROM PANTELLERIA"
+  },
+  {
+    "wine_name": "GRILLO",
+    "producer": "GORGHI TONDI",
+    "denomination": "SICILIA DOC/TRAPANI 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Grillo",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "FRAGRANT, TROPICAL FRUIT - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "LA SEGRETA",
+    "producer": "PLANETA",
+    "denomination": "SICILIA DOC 2021",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "50% Grecanico, 30% Chardonnay, 10% Viognier, 10% Fiano",
+      "terroir": null,
+      "alcohol_content": "12.5%",
+      "acidity": "5.25 g/l",
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": "Screw Cap"
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "CHARD WITH LOCAL SICILIAN GRAPES - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "ETNA BIANCO",
+    "producer": "TORNATORE",
+    "denomination": "ETNA 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Carricante",
+      "terroir": "terraced vineyards on the north slope of the volcano at around 650m elevation",
+      "alcohol_content": null,
+      "acidity": "bright acidity",
+      "aging": "4-6 months in a mix of concrete and stainless steel",
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": "Drink now through 2034",
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": "faint straw yellow with intense greenish reflections",
+      "olfactory": "pleasant hints of green apple, grapefruit, white peach and aromatic herbs, mentholated hints of white fruit and citrus",
+      "gustatory": "pleasant savoriness and freshness complemented by extraordinary minerality, Meyer lemon, yellow pear and apple alongside a tangy, saline note"
+    },
+    "food_pairings": "perfect with young and medium-aged cheeses",
+    "additional_information": "VOLCANIC MINERALITY, PEAR & CITRUS"
+  },
+  {
+    "wine_name": "ETNA BIANCO",
+    "producer": "BENANTI",
+    "denomination": "ETNA DOC 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "100% Carricante",
+      "terroir": "sandy, volcanic soils that are rich in minerals, with sub-acid reaction. Eastern and southern slopes of Mount Etna",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "green apple, white grapefruit, lime zest, white flowers, and a note of smoke/flint",
+      "gustatory": "racy, lush, and the fruit glides gently into smoky minerality. Ashy notes of citrus, stone fruit, and minerals"
+    },
+    "food_pairings": null,
+    "additional_information": "SOUTH SIDE EXTRA VOLCANIC MINERALITY - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "CHARDONNAY",
+    "producer": "PLANETA",
+    "denomination": "MENFI DO 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Chardonnay",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "MODERN CHARD, APRICOT, CITRUS - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "ETNA ROSATO",
+    "producer": "GRACI",
+    "denomination": "ETNA DOC 2023",
+    "wine_type": "ROSATO",
+    "technical_sheet": {
+      "grape_varieties": null,
+      "terroir": "Mount Etna",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "VOLCANIC ROSE' FROM A PREMIER PRODUCER - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "CIRO BIANCO",
+    "producer": "LIBRANDI",
+    "denomination": "CIRO DOC 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Greco Bianco",
+      "terroir": "historic coastal Ciro wine zone on the east coast",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "HISTORIC CALABRIAN GRECO BIANCO PRODUCED IN THE HISTORIC COASTAL CIRO WINE ZONE ON THE EAST COAST"
+  },
+  {
+    "wine_name": "PECORELLO",
+    "producer": "IPPOLITO",
+    "denomination": "CALABRIA IGT/CIRO 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Pecorello",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "bright citrus",
+      "gustatory": "mineral tones. Vibrant, balanced and persistent"
+    },
+    "food_pairings": null,
+    "additional_information": "SUN WASHED PECORELLO GRAPE BRIGHT CITRUS AND MINERAL TONES. VIBRANT, BALANCED AND PERSISTENT - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "CIRO ROSATO",
+    "producer": "LIBRANDI",
+    "denomination": "CIRO DOC 2023",
+    "wine_type": "ROSATO",
+    "technical_sheet": {
+      "grape_varieties": "Gaglioppo",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "crushed raspberries, cherries, blood orange",
+      "gustatory": "balancing minerality"
+    },
+    "food_pairings": null,
+    "additional_information": "CALABRIAN STYLISH GAGLIOPPO ROSÉ CRUSHED RASPBERRIES, CHERRIES, BLOOD ORANGE WITH BALANCING MINERALITY"
+  },
+  {
+    "wine_name": "BASILICATA BIANCO",
+    "producer": "RE MANFREDI",
+    "denomination": "BASILICATA IGT 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Gewurtztraminer & Muller Thurgau",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "apple, citrus, sage, jasmine",
+      "gustatory": "mineral notes"
+    },
+    "food_pairings": null,
+    "additional_information": "AN EXOTIC BLEND OF GEWURTZTRAMINER & MULLER THURGAU. APPLE, CITRUS, SAGE, JASMINE, MINERAL NOTES"
+  },
+  {
+    "wine_name": "GRAVINA",
+    "producer": "BOTROMAGNO",
+    "denomination": "GRAVINA DOP 2021",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Greco & Fiano",
+      "terroir": "limestone soil",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "rich minerality"
+    },
+    "food_pairings": null,
+    "additional_information": "ORGANIC HISTORIC BLEND OF GRECO & FIANO WHICH DATES BACK TO ANCIENT ROME. LIMESTONE SOIL = RICH MINERALITY - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "VERDECA",
+    "producer": "LEONE DE CASTRIS",
+    "denomination": "SALENTO IGT 2021",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Verdeca",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "bergamot & wild flowers",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "BERGAMOT & WILD FLOWERS"
+  },
+  {
+    "wine_name": "FALANGHINA",
+    "producer": "FONTANAVECCHIA",
+    "denomination": "DEL SANNIO DOP 2021",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Falanghina",
+      "terroir": "Benevento",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "BENEVENTO TREASURE"
+  },
+  {
+    "wine_name": "GRECO DI TUFO",
+    "producer": "TERRADORA",
+    "denomination": "GRECO DI TUFO DOP 2021",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Greco",
+      "terroir": "Tufo zone",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "LEGENDARY ZONE"
+  },
+  {
+    "wine_name": "LACRYMA CHRISTI",
+    "producer": "MASTROBERARDINO",
+    "denomination": "LACRYMA CHRISTI DOP 2021",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": null,
+      "terroir": "volcanic",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "VOLCANIC"
+  },
+  {
+    "wine_name": "ISCHIA BIANCO",
+    "producer": "MAZZELLA",
+    "denomination": "CAMPANIA 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": null,
+      "terroir": "Ischia island",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "fruity & volcanic"
+    },
+    "food_pairings": null,
+    "additional_information": "FRUITY & VOLCANIC ISLAND WHITE"
+  },
+  {
+    "wine_name": "FIANO",
+    "producer": "ALFONSO ROTOLO",
+    "denomination": "PAESTUM IGP 2021",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Fiano",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "orange, bergamot, wild flowers",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "ORANGE, BERGAMOT, WILD FLOWERS"
+  },
+  {
+    "wine_name": "TRAMONTI",
+    "producer": "S. FRANCESCO",
+    "denomination": "COSTA D'AMALFI DOC 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Falanghina, Biancolella",
+      "terroir": "Amalfi Coast",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "FALANGHINA, BIANCOLELLA - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "PALAGRELLO",
+    "producer": "T. PRINCIPE",
+    "denomination": "CAMPANIA 2015",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Palagrello",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "HISTORIC, ENJOYED BY BOURBON KINGS"
+  },
+  {
+    "wine_name": "MONTE DI GRAZIA ROSATO",
+    "producer": null,
+    "denomination": "CAMPANIA IGT 2022",
+    "wine_type": "ROSATO",
+    "technical_sheet": {
+      "grape_varieties": "Tintore",
+      "terroir": "Amalfi Coast",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "AMALFI COAST, TINTORE GRAPE - Practices organic agricultural cultivation & protocol"
+  }
+]
