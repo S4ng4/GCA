@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="wine-title">Wine Details</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcf7f7;
+            color: #333333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #7b0b2d;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card-container {
+            position: relative;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .wine-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .logo-background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            opacity: 0.1;
+            pointer-events: none;
+            text-align: center;
+        }
+        .logo-background img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            filter: grayscale(1%) brightness(0.7);
+        }
+        .wine-info h1 {
+            color: #7b0b2d;
+            margin-top: 0;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
+        }
+        .wine-info h2 {
+            font-style: italic;
+            font-weight: normal;
+            margin-top: 5px;
+            color: #5a0821;
+        }
+        .specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .spec-item {
+            display: flex;
+        }
+        .spec-item strong {
+            min-width: 120px;
+            color: #7b0b2d;
+        }
+        .chart-container {
+            position: relative;
+            padding: 20px;
+            z-index: 2;
+        }
+        .chart-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            position: relative;
+            z-index: 3;
+        }
+        .chart-title {
+            color: #7b0b2d;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 3;
+        }
+        .radar-chart {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            z-index: 3;
+        }
+        .aroma-chart {
+            width: 100%;
+            height: 350px;
+            position: relative;
+            z-index: 3;
+        }
+        .flavor-profile {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            text-align: center;
+            position: relative;
+            z-index: 3;
+        }
+        .flavor-category {
+            padding: 10px;
+        }
+        .flavor-category h3 {
+            color: #7b0b2d;
+            margin-top: 0;
+        }
+        footer {
+            background-color: #500723;
+            color: #d4af37;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .wine-type-indicator {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #7b0b2d; 
+            color: #fff;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+        .extra-info {
+            grid-column: span 2;
+            padding: 10px;
+            border-left: 3px solid #d4af37;
+            margin-top: 10px;
+        }
+        .extra-info h3 {
+            color: #7b0b2d;
+            margin-top: 0;
+        }
+        .extra-info p {
+            font-size: 14px;
+        }
+        
+        /* Media queries for mobile version */
+        @media (max-width: 768px) {
+            .content {
+                padding: 10px;
+            }
+            .wine-card {
+                grid-template-columns: 1fr;
+            }
+            .chart-row {
+                grid-template-columns: 1fr;
+            }
+            .specs {
+                grid-template-columns: 1fr;
+            }
+            .flavor-profile {
+                grid-template-columns: 1fr;
+            }
+            .spec-item {
+                flex-direction: column;
+            }
+            .spec-item strong {
+                min-width: auto;
+                margin-bottom: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="page-header"></h1>
+    </header>
+    
+    <div class="content">
+        <div class="card-container">
+            <div class="logo-background">
+                <img src="https://s4ng4.github.io/An-Evening-In-Alba/gcaLogo.png" alt="Wine logo" onerror="this.style.display='none'">
+            </div>
+            <div class="wine-card">
+                <div class="wine-info">
+                    <h1 id="wine-name"></h1>
+                    <h2 id="denomination"></h2>
+                    <div class="specs" id="specs-container">
+                        </div>
+                </div>
+                <div class="wine-summary">
+                    <h3>About the Wine</h3>
+                    <p id="about-wine"></p>
+                    <h3>Ideal Food Pairings</h3>
+                    <p id="food-pairings"></p>
+                </div>
+                <div class="extra-info">
+                    <h3>Additional Information</h3>
+                    <p id="additional-info"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-container">
+            <div class="logo-background">
+                <img src="https://s4ng4.github.io/An-Evening-In-Alba/gcaLogo.png" alt="Wine logo" onerror="this.style.display='none'">
+            </div>
+            <div class="chart-container">
+                <h2 class="chart-title">Tasting Notes</h2>
+                <div class="flavor-profile">
+                    <div class="flavor-category">
+                        <h3>Visual</h3>
+                        <p id="tasting-visual"></p>
+                    </div>
+                    <div class="flavor-category">
+                        <h3>Olfactory</h3>
+                        <p id="tasting-olfactory"></p>
+                    </div>
+                    <div class="flavor-category">
+                        <h3>Gustatory</h3>
+                        <p id="tasting-gustatory"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p id="footer-text"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const wineData = JSON.parse(localStorage.getItem('selectedWine'));
+            if (!wineData) {
+                document.body.innerHTML = '<p style="text-align: center; margin-top: 50px;">Nessun vino selezionato. Torna alla pagina principale.</p>';
+                return;
+            }
+
+            // Populate the page with wine data
+            document.getElementById('wine-title').textContent = wineData.wine_name || 'Wine Details';
+            document.getElementById('page-header').innerHTML = `${wineData.producer || ''} - ${wineData.wine_name || ''} <span class="wine-type-indicator">${wineData.wine_type || 'Wine'}</span>`;
+            document.getElementById('wine-name').textContent = wineData.wine_name || 'Nome Sconosciuto';
+            document.getElementById('denomination').textContent = wineData.denomination || 'Denominazione Sconosciuta';
+            document.getElementById('additional-info').textContent = wineData.additional_information || 'Nessuna informazione aggiuntiva disponibile.';
+            document.getElementById('food-pairings').textContent = wineData.food_pairings || 'Abbinamenti gastronomici non specificati.';
+
+            // Populate tasting notes
+            if (wineData.tasting_notes) {
+                document.getElementById('tasting-visual').textContent = wineData.tasting_notes.visual || 'Note visive non specificate.';
+                document.getElementById('tasting-olfactory').textContent = wineData.tasting_notes.olfactory || 'Note olfattive non specificate.';
+                document.getElementById('tasting-gustatory').textContent = wineData.tasting_notes.gustatory || 'Note gustative non specificate.';
+            } else {
+                document.getElementById('tasting-visual').textContent = 'Note visive non specificate.';
+                document.getElementById('tasting-olfactory').textContent = 'Note olfattive non specificate.';
+                document.getElementById('tasting-gustatory').textContent = 'Note gustative non specificate.';
+            }
+
+            // Populate technical sheet dynamically
+            const specsContainer = document.getElementById('specs-container');
+            if (wineData.technical_sheet) {
+                for (const [key, value] of Object.entries(wineData.technical_sheet)) {
+                    if (value) { // Only add if value exists
+                        const specItem = document.createElement('div');
+                        specItem.className = 'spec-item';
+                        specItem.innerHTML = `
+                            <strong>${key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}:</strong>
+                            <span>${value}</span>
+                        `;
+                        specsContainer.appendChild(specItem);
+                    }
+                }
+            }
+            if (specsContainer.innerHTML === '') {
+                specsContainer.innerHTML = '<p>Scheda tecnica non disponibile.</p>';
+            }
+
+            document.getElementById('footer-text').textContent = `© 2025 - ${wineData.producer || 'Unknown'} - ${wineData.wine_name || 'Unknown'}. Consume responsibly.`;
+        });
+    </script>
+</body>
+</html>
