@@ -67,8 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="text-xs text-neutral-400 mt-2 line-clamp-2">${additionalInfo}</p>
                 `;
 
-                // Add the click event listener to the wine card
-                wineCard.addEventListener('click', () => {
+                wineCard.addEventListener('click', (e) => {
+                    // This prevents issues if you have nested click elements
+                    e.stopPropagation();
+                    // This line will print a message to the console
+                    console.log('Scheda vino cliccata:', wine.wine_name); 
                     selectWine(wine);
                 });
                 
@@ -114,11 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // New function to handle wine selection and redirection
     function selectWine(wine) {
-        // Save the wine data to localStorage
         localStorage.setItem('selectedWine', JSON.stringify(wine));
-        // Redirect to the new details page
         window.location.href = 'wine-detail.html';
     }
 });
