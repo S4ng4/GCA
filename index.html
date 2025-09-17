@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Vini</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-neutral-50 text-neutral-800 font-sans;
+            }
+            .filter-active {
+                @apply bg-neutral-800 text-white;
+            }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 font-sans">
+
+    <header class="flex flex-col md:flex-row justify-between items-center mb-10 md:mb-16">
+        <h1 class="text-4xl md:text-5xl font-serif font-light mb-4 md:mb-0">
+            La Tua Wine List
+        </h1>
+        <div id="filter-container" class="flex flex-wrap gap-2 md:gap-4">
+            <button class="filter-btn px-4 py-2 text-sm font-medium rounded-full bg-neutral-200 text-neutral-700 hover:bg-neutral-300 transition filter-active" data-filter="all">Tutti</button>
+            </div>
+    </header>
+
+    <main id="wine-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+        </main>
+
+    <footer class="text-center mt-16 text-sm text-neutral-500">
+        &copy; 2025 Wine List. Powered by JSON.
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
