@@ -4,6 +4,7 @@
     "producer": "DONNAFUGATA",
     "denomination": "SICILIA DOC 2023",
     "wine_type": "BIANCO",
+    "region": "SICILIA",
     "technical_sheet": {
       "grape_varieties": "Zibbibo",
       "terroir": "Pantelleria",
@@ -45,6 +46,7 @@
     "producer": "GORGHI TONDI",
     "denomination": "SICILIA DOC/TRAPANI 2023",
     "wine_type": "BIANCO",
+    "region": "SICILIA",
     "technical_sheet": {
       "grape_varieties": "Grillo",
       "terroir": null,
@@ -86,6 +88,7 @@
     "producer": "PLANETA",
     "denomination": "SICILIA DOC 2021",
     "wine_type": "BIANCO",
+    "region": "SICILIA",
     "technical_sheet": {
       "grape_varieties": "50% Grecanico, 30% Chardonnay, 10% Viognier, 10% Fiano",
       "terroir": null,
@@ -127,6 +130,7 @@
     "producer": "TORNATORE",
     "denomination": "ETNA 2022",
     "wine_type": "BIANCO",
+    "region": "SICILIA",
     "technical_sheet": {
       "grape_varieties": "Carricante",
       "terroir": "terraced vineyards on the north slope of the volcano at around 650m elevation",
@@ -168,6 +172,7 @@
     "producer": "BENANTI",
     "denomination": "ETNA DOC 2022",
     "wine_type": "BIANCO",
+    "region": "SICILIA",
     "technical_sheet": {
       "grape_varieties": "100% Carricante",
       "terroir": "sandy, volcanic soils that are rich in minerals, with sub-acid reaction. Eastern and southern slopes of Mount Etna",
@@ -209,6 +214,7 @@
     "producer": "PLANETA",
     "denomination": "MENFI DO 2022",
     "wine_type": "BIANCO",
+    "region": "SICILIA",
     "technical_sheet": {
       "grape_varieties": "Chardonnay",
       "terroir": null,
@@ -250,6 +256,7 @@
     "producer": "GRACI",
     "denomination": "ETNA DOC 2023",
     "wine_type": "ROSATO",
+    "region": "SICILIA",
     "technical_sheet": {
       "grape_varieties": null,
       "terroir": "Mount Etna",
@@ -291,6 +298,7 @@
     "producer": "LIBRANDI",
     "denomination": "CIRO DOC 2022",
     "wine_type": "BIANCO",
+    "region": "CALABRIA",
     "technical_sheet": {
       "grape_varieties": "Greco Bianco",
       "terroir": "historic coastal Ciro wine zone on the east coast",
@@ -332,6 +340,7 @@
     "producer": "IPPOLITO",
     "denomination": "CALABRIA IGT/CIRO 2022",
     "wine_type": "BIANCO",
+    "region": "CALABRIA",
     "technical_sheet": {
       "grape_varieties": "Pecorello",
       "terroir": null,
@@ -373,6 +382,7 @@
     "producer": "LIBRANDI",
     "denomination": "CIRO DOC 2023",
     "wine_type": "ROSATO",
+    "region": "CALABRIA",
     "technical_sheet": {
       "grape_varieties": "Gaglioppo",
       "terroir": null,
@@ -414,6 +424,7 @@
     "producer": "RE MANFREDI",
     "denomination": "BASILICATA IGT 2023",
     "wine_type": "BIANCO",
+    "region": "BASILICATA",
     "technical_sheet": {
       "grape_varieties": "Gewurtztraminer & Muller Thurgau",
       "terroir": null,
@@ -455,6 +466,7 @@
     "producer": "BOTROMAGNO",
     "denomination": "GRAVINA DOP 2021",
     "wine_type": "BIANCO",
+    "region": "PUGLIA",
     "technical_sheet": {
       "grape_varieties": "Greco & Fiano",
       "terroir": "limestone soil",
@@ -496,6 +508,7 @@
     "producer": "LEONE DE CASTRIS",
     "denomination": "SALENTO IGT 2021",
     "wine_type": "BIANCO",
+    "region": "PUGLIA",
     "technical_sheet": {
       "grape_varieties": "Verdeca",
       "terroir": null,
@@ -537,6 +550,7 @@
     "producer": "FONTANAVECCHIA",
     "denomination": "DEL SANNIO DOP 2021",
     "wine_type": "BIANCO",
+    "region": "CAMPANIA",
     "technical_sheet": {
       "grape_varieties": "Falanghina",
       "terroir": "Benevento",
@@ -578,6 +592,7 @@
     "producer": "TERRADORA",
     "denomination": "GRECO DI TUFO DOP 2021",
     "wine_type": "BIANCO",
+    "region": "CAMPANIA",
     "technical_sheet": {
       "grape_varieties": "Greco",
       "terroir": "Tufo zone",
@@ -619,6 +634,7 @@
     "producer": "MASTROBERARDINO",
     "denomination": "LACRYMA CHRISTI DOP 2021",
     "wine_type": "BIANCO",
+    "region": "CAMPANIA",
     "technical_sheet": {
       "grape_varieties": null,
       "terroir": "volcanic",
@@ -660,6 +676,7 @@
     "producer": "MAZZELLA",
     "denomination": "CAMPANIA 2022",
     "wine_type": "BIANCO",
+    "region": "CAMPANIA",
     "technical_sheet": {
       "grape_varieties": null,
       "terroir": "Ischia island",
@@ -701,6 +718,7 @@
     "producer": "ALFONSO ROTOLO",
     "denomination": "PAESTUM IGP 2021",
     "wine_type": "BIANCO",
+    "region": "CAMPANIA",
     "technical_sheet": {
       "grape_varieties": "Fiano",
       "terroir": null,
@@ -742,6 +760,7 @@
     "producer": "S. FRANCESCO",
     "denomination": "COSTA D'AMALFI DOC 2023",
     "wine_type": "BIANCO",
+    "region": "CAMPANIA",
     "technical_sheet": {
       "grape_varieties": "Falanghina, Biancolella",
       "terroir": "Amalfi Coast",
@@ -783,6 +802,7 @@
     "producer": "T. PRINCIPE",
     "denomination": "CAMPANIA 2015",
     "wine_type": "BIANCO",
+    "region": "CAMPANIA",
     "technical_sheet": {
       "grape_varieties": "Palagrello",
       "terroir": null,
@@ -824,6 +844,7 @@
     "producer": null,
     "denomination": "CAMPANIA IGT 2022",
     "wine_type": "ROSATO",
+    "region": "CAMPANIA",
     "technical_sheet": {
       "grape_varieties": "Tintore",
       "terroir": "Amalfi Coast",
