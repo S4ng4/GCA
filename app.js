@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     let allWines = [];
 
+    // Carica il file JSON
     fetch('pg3.json')
         .then(response => {
             if (!response.ok) {
@@ -68,11 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
 
                 wineCard.addEventListener('click', (e) => {
-                    // This prevents issues if you have nested click elements
                     e.stopPropagation();
-                    // This line will print a message to the console
-                    console.log('Scheda vino cliccata:', wine.wine_name); 
-                    selectWine(wine);
+                    openModal(wine);
                 });
                 
                 wineGrid.appendChild(wineCard);
@@ -117,8 +115,53 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function selectWine(wine) {
-        localStorage.setItem('selectedWine', JSON.stringify(wine));
-        window.location.href = 'wine-detail.html';
+    // Modal logic
+    const modal = document.getElementById('wine-modal');
+    const closeBtn = modal.querySelector('.modal-close-btn');
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    function openModal(wine) {
+        // Popola il modale con i dati del vino
+        document.getElementById('modal-wine-name').textContent = wine.wine_name || 'Nome Sconosciuto';
+        document.getElementById('modal-producer').textContent = wine.producer || 'Cantina Sconosciuta';
+        document.getElementById('modal-additional-info').textContent = wine.additional_information || 'Nessuna informazione aggiuntiva disponibile.';
+        document.getElementById('modal-food-pairings').textContent = wine.food_pairings || 'Abbinamenti non specificati.';
+
+        // Scheda Tecnica
+        const technicalSheetList = document.getElementById('modal-technical-sheet');
+        technicalSheetList.innerHTML = '';
+        if (wine.technical_sheet) {
+            for (const [key, value] of Object.entries(wine.technical_sheet)) {
+                if (value) {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `<span class="font-medium">${key.replace(/_/g, ' ')}:</span> ${value}`;
+                    technicalSheetList.appendChild(listItem);
+                }
+            }
+        }
+        if (technicalSheetList.innerHTML === '') {
+            technicalSheetList.innerHTML = '<li>Nessuna scheda tecnica disponibile.</li>';
+        }
+
+        // Note di Degustazione
+        const tastingNotes = wine.tasting_notes || {};
+        document.getElementById('modal-tasting-visual').textContent = tastingNotes.visual || 'Non specificato.';
+        document.getElementById('modal-tasting-olfactory').textContent = tastingNotes.olfactory || 'Non specificato.';
+        document.getElementById('modal-tasting-gustatory').textContent = tastingNotes.gustatory || 'Non specificato.';
+
+        // Rendi il modale visibile
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Prevents scrolling on the main page
+    }
+
+    function closeModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = ''; // Re-enables scrolling
     }
 });
