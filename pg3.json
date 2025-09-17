@@ -1,46 +1,47 @@
 [
+  
   {
-  "wine_name": "ZIBBIBO LIGHEA",
-  "producer": "DONNAFUGATA",
-  "denomination": "SICILIA DOC 2023",
-  "wine_type": "BIANCO",
-  "region": "SICILIA",
-  "technical_sheet": {
-    "grape_varieties": "Zibbibo",
-    "terroir": "Pantelleria",
-    "alcohol_content": "15%",
-    "acidity": 1,
-    "aging": 2,
-    "first_vintage": "-",
-    "harvest_period": "-",
-    "longevity": "10 Anni",
-    "cap": "-"
+    "wine_name": "ZIBBIBO LIGHEA",
+    "producer": "DONNAFUGATA",
+    "denomination": "SICILIA DOC 2023",
+    "wine_type": "BIANCO",
+    "region": "SICILIA",
+    "technical_sheet": {
+      "grape_varieties": "Zibbibo",
+      "terroir": "Pantelleria",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "ISLAND VIBE FROM PANTELLERIA"
   },
-  "organoleptic_profile": {
-    "body": 1,
-    "tannins": 2,
-    "alcohol": 3,
-    "persistence": 4,
-    "acidity": 5,
-    "complexity": 1
-  },
-  "aromatic_profile": {
-    "fruity": 1,
-    "floral": 2,
-    "spicy": 3,
-    "nutty": 4,
-    "earthy": 5,
-    "vegetal": 3,
-    "mineral": 1
-  },
-  "tasting_notes": {
-    "visual": "Golden",
-    "olfactory": "Test",
-    "gustatory": "Test Test Test"
-  },
-  "food_pairings": "Pesce",
-  "additional_information": "ISLAND VIBE FROM PANTELLERIA"
-},
   {
     "wine_name": "GRILLO",
     "producer": "GORGHI TONDI",
@@ -143,22 +144,22 @@
       "cap": null
     },
     "organoleptic_profile": {
-    "body": 1,
-    "tannins": 2,
-    "alcohol": 3,
-    "persistence": 4,
-    "acidity": 5,
-    "complexity": 1
-  },
-  "aromatic_profile": {
-    "fruity": 1,
-    "floral": 2,
-    "spicy": 3,
-    "nutty": 4,
-    "earthy": 5,
-    "vegetal": 3,
-    "mineral": 1
-  },
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
     "tasting_notes": {
       "visual": "faint straw yellow with intense greenish reflections",
       "olfactory": "pleasant hints of green apple, grapefruit, white peach and aromatic herbs, mentholated hints of white fruit and citrus",
@@ -882,7 +883,3 @@
     "additional_information": "AMALFI COAST, TINTORE GRAPE - Practices organic agricultural cultivation & protocol"
   }
 ]
-
-
-
-
