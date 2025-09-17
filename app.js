@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     let allWines = [];
 
-    // Carica il file JSON
     fetch('pg3.json')
         .then(response => {
             if (!response.ok) {
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Raggruppa i vini per regione
         const groupedByRegion = winesToRender.reduce((acc, wine) => {
             const region = wine.region || 'REGIONE SCONOSCIUTA';
             if (!acc[region]) {
@@ -39,10 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return acc;
         }, {});
 
-        // Ordina le regioni alfabeticamente
         const sortedRegions = Object.keys(groupedByRegion).sort();
 
-        // Renderizza ogni regione e i suoi vini
         sortedRegions.forEach(region => {
             if (groupedByRegion[region].length === 0) return;
 
@@ -70,6 +66,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <p class="text-xs text-neutral-400 mt-2 line-clamp-2">${additionalInfo}</p>
                 `;
+
+                // Add the click event listener to the wine card
+                wineCard.addEventListener('click', () => {
+                    selectWine(wine);
+                });
                 
                 wineGrid.appendChild(wineCard);
             });
@@ -111,5 +112,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 renderWines(filteredWines);
             }
         });
+    }
+
+    // New function to handle wine selection and redirection
+    function selectWine(wine) {
+        // Save the wine data to localStorage
+        localStorage.setItem('selectedWine', JSON.stringify(wine));
+        // Redirect to the new details page
+        window.location.href = 'wine-detail.html';
     }
 });
