@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     let allWines = [];
 
+    // Lista delle regioni italiane per una migliore categorizzazione
+    const italianRegions = [
+        'ABRUZZO', 'BASILICATA', 'CALABRIA', 'CAMPANIA', 'EMILIA-ROMAGNA', 'FRIULI-VENEZIA GIULIA',
+        'LAZIO', 'LIGURIA', 'LOMBARDIA', 'MARCHE', 'MOLISE', 'PIEMONTE', 'PUGLIA', 'SARDEGNA',
+        'SICILIA', 'TOSCANA', 'TRENTINO-ALTO ADIGE', 'UMBRIA', 'VALLE D\'AOSTA', 'VENETO',
+        'ETNA' // Aggiungiamo Etna come caso speciale, data la sua importanza nel JSON
+    ];
+
     // Carica il file JSON
     fetch('pg3.json')
         .then(response => {
@@ -17,16 +25,42 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
             console.error('Si è verificato un errore:', error);
             const grid = document.getElementById('wine-grid');
-            grid.innerHTML = '<p class="col-span-full text-center text-red-500">Impossibile caricare la lista dei vini. Controlla il file JSON.</p>';
+            grid.innerHTML = '<p class="col-span-full text-center text-red-500 mt-16">Impossibile caricare la lista dei vini. Controlla il file JSON e riprova avviando il sito da un server locale (es. Live Server).</p>';
         });
 
-    function getRegion(denomination) {
-        if (!denomination) return 'ALTRO';
-        const parts = denomination.split('/').pop().split(' ');
-        if (parts.length > 1) {
-            return parts[0].trim().toUpperCase();
+    function getRegion(wine) {
+        const denomination = wine.denomination || '';
+        const terroir = (wine.technical_sheet && wine.technical_sheet.terroir) || '';
+        const additionalInfo = wine.additional_information || '';
+
+        // Priorità 1: Cerca la regione nella denominazione
+        for (const region of italianRegions) {
+            if (denomination.toUpperCase().includes(region)) {
+                return region;
+            }
         }
-        return denomination.trim().toUpperCase();
+        
+        // Priorità 2: Cerca la regione nel terroir
+        for (const region of italianRegions) {
+            if (terroir.toUpperCase().includes(region)) {
+                return region;
+            }
+        }
+
+        // Priorità 3: Cerca la regione nelle informazioni aggiuntive
+        for (const region of italianRegions) {
+            if (additionalInfo.toUpperCase().includes(region)) {
+                return region;
+            }
+        }
+
+        // Fallback: utilizza la denominazione o un valore predefinito
+        if (denomination.length > 0) {
+            // Estrai solo la parte iniziale se è una denominazione (es. 'SICILIA DOC')
+            return denomination.split(' ')[0].toUpperCase();
+        }
+
+        return 'REGIONE SCONOSCIUTA';
     }
 
     function renderWines(winesToRender) {
@@ -40,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Raggruppa i vini per regione
         const groupedByRegion = winesToRender.reduce((acc, wine) => {
-            const region = getRegion(wine.denomination);
+            const region = getRegion(wine);
             if (!acc[region]) {
                 acc[region] = [];
             }
@@ -55,16 +89,16 @@ document.addEventListener('DOMContentLoaded', () => {
         sortedRegions.forEach(region => {
             if (groupedByRegion[region].length === 0) return;
 
-            // Intestazione per la regione
+            // Intestazione per la regione con stile migliorato
             const regionHeader = document.createElement('h2');
-            regionHeader.className = 'col-span-full text-2xl font-serif font-semibold text-neutral-700 mt-8 mb-4';
-            regionHeader.textContent = region;
+            regionHeader.className = 'col-span-full text-3xl font-serif font-semibold text-neutral-800 mt-12 mb-4 tracking-wide';
+            regionHeader.textContent = region.replace(/-/g, ' '); // Sostituisce i trattini con spazi, se presenti
             wineGrid.appendChild(regionHeader);
 
             // Crea le schede per ogni vino della regione
             groupedByRegion[region].forEach(wine => {
                 const wineCard = document.createElement('div');
-                wineCard.className = 'bg-white p-4 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 transform hover:scale-105 cursor-pointer';
+                wineCard.className = 'bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 transform hover:scale-105 cursor-pointer';
 
                 const wineName = wine.wine_name || 'Nome Sconosciuto';
                 const producer = wine.producer || 'Cantina Sconosciuta';
@@ -74,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 wineCard.innerHTML = `
                     <div class="text-xs text-neutral-500 mb-1">${producer}</div>
-                    <h3 class="text-xl font-bold mb-1 line-clamp-1">${wineName}</h3>
+                    <h3 class="text-2xl font-bold mb-1 line-clamp-1">${wineName}</h3>
                     <h4 class="text-sm text-neutral-600 mb-2 line-clamp-1">${denomination}</h4>
                     <div class="text-sm font-semibold text-neutral-700">${wineType}</div>
                     <p class="text-xs text-neutral-400 mt-2 line-clamp-2">${additionalInfo}</p>
@@ -90,13 +124,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const wineTypes = [...new Set(wines.map(wine => wine.wine_type))];
         
         // Crea i pulsanti per ogni tipo di vino
+        filterContainer.innerHTML = '<button class="filter-btn px-4 py-2 text-sm font-medium rounded-full bg-neutral-800 text-white transition filter-active" data-filter="all">Tutti</button>';
+        
         wineTypes.sort().forEach(type => {
-            const button = document.createElement('button');
-            button.className = 'filter-btn px-4 py-2 text-sm font-medium rounded-full bg-neutral-200 text-neutral-700 hover:bg-neutral-300 transition';
-            button.textContent = type;
-            button.setAttribute('data-filter', type);
-            
-            filterContainer.appendChild(button);
+            if (type) {
+                const button = document.createElement('button');
+                button.className = 'filter-btn px-4 py-2 text-sm font-medium rounded-full bg-neutral-200 text-neutral-700 hover:bg-neutral-300 transition';
+                button.textContent = type;
+                button.setAttribute('data-filter', type);
+                filterContainer.appendChild(button);
+            }
         });
 
         // Aggiunge un listener a tutti i pulsanti filtro
@@ -105,8 +142,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const filter = e.target.getAttribute('data-filter');
                 
                 // Rimuove la classe attiva da tutti i pulsanti e la aggiunge a quello cliccato
-                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('filter-active'));
-                e.target.classList.add('filter-active');
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('filter-active', 'bg-neutral-800', 'text-white'));
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.add('bg-neutral-200', 'text-neutral-700'));
+                e.target.classList.remove('bg-neutral-200', 'text-neutral-700');
+                e.target.classList.add('filter-active', 'bg-neutral-800', 'text-white');
                 
                 let filteredWines;
                 if (filter === 'all') {
@@ -119,5 +158,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
 });
