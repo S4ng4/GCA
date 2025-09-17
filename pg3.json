@@ -8,37 +8,37 @@
     "technical_sheet": {
       "grape_varieties": "Zibbibo",
       "terroir": "Pantelleria",
-      "alcohol_content": null,
-      "acidity": null,
-      "aging": null,
-      "first_vintage": null,
-      "harvest_period": null,
-      "longevity": null,
-      "cap": null
+      "alcohol_content": 15%,
+      "acidity": 1,
+      "aging": 2,
+      "first_vintage": - ,  
+      "harvest_period": -,
+      "longevity": 10 Ann,
+      "cap": -
     },
     "organoleptic_profile": {
-      "body": null,
-      "tannins": null,
-      "alcohol": null,
-      "persistence": null,
-      "acidity": null,
-      "complexity": null
+      "body": 1,
+      "tannins": 2,
+      "alcohol": 3,
+      "persistence": 4,
+      "acidity": 5,
+      "complexity": 1
     },
     "aromatic_profile": {
-      "fruity": null,
-      "floral": null,
-      "spicy": null,
-      "nutty": null,
-      "earthy": null,
-      "vegetal": null,
-      "mineral": null
+      "fruity": 1,
+      "floral": 2,
+      "spicy": 3,
+      "nutty": 4,
+      "earthy": 5,
+      "vegetal": 3,
+      "mineral": 1
     },
     "tasting_notes": {
-      "visual": null,
-      "olfactory": null,
-      "gustatory": null
+      "visual": Golden,
+      "olfactory": Test,
+      "gustatory": Test Test Test
     },
-    "food_pairings": null,
+    "food_pairings": Pesce,
     "additional_information": "ISLAND VIBE FROM PANTELLERIA"
   },
   {
@@ -882,3 +882,4 @@
     "additional_information": "AMALFI COAST, TINTORE GRAPE - Practices organic agricultural cultivation & protocol"
   }
 ]
+
