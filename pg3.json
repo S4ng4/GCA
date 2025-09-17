@@ -8,13 +8,13 @@
     "technical_sheet": {
       "grape_varieties": "Zibbibo",
       "terroir": "Pantelleria",
-      "alcohol_content": 15%,
+      "alcohol_content": 15"%",
       "acidity": 1,
       "aging": 2,
-      "first_vintage": - ,  
-      "harvest_period": -,
-      "longevity": 10 Ann,
-      "cap": -
+      "first_vintage": "-" ,  
+      "harvest_period": "-",
+      "longevity": "10 Anni",
+      "cap": "-"
     },
     "organoleptic_profile": {
       "body": 1,
@@ -34,11 +34,11 @@
       "mineral": 1
     },
     "tasting_notes": {
-      "visual": Golden,
-      "olfactory": Test,
-      "gustatory": Test Test Test
+      "visual": "Golden",
+      "olfactory": "Test",
+      "gustatory": "Test Test Test"
     },
-    "food_pairings": Pesce,
+    "food_pairings": "Pesce",
     "additional_information": "ISLAND VIBE FROM PANTELLERIA"
   },
   {
@@ -882,4 +882,5 @@
     "additional_information": "AMALFI COAST, TINTORE GRAPE - Practices organic agricultural cultivation & protocol"
   }
 ]
+
 
