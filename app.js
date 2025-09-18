@@ -1,24 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
     let allWines = [];
 
-    // Carica il file JSON
-    fetch('pg3.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Errore nel caricamento del file JSON.');
-            }
+    // Carica entrambi i file JSON in parallelo
+    Promise.all([
+        fetch('pg3.json').then(response => {
+            if (!response.ok) throw new Error('Errore nel caricamento di pg3.json');
+            return response.json();
+        }),
+        fetch('pg4.json').then(response => {
+            if (!response.ok) throw new Error('Errore nel caricamento di pg4.json');
             return response.json();
         })
-        .then(data => {
-            allWines = data;
-            renderWines(allWines);
-            createFilters(allWines);
-        })
-        .catch(error => {
-            console.error('Si è verificato un errore:', error);
-            const grid = document.getElementById('wine-grid');
-            grid.innerHTML = '<p class="col-span-full text-center text-red-500 mt-16">Impossibile caricare la lista dei vini. Controlla il file JSON e riprova avviando il sito da un server locale (es. Live Server).</p>';
-        });
+    ])
+    .then(([pg3Data, pg4Data]) => {
+        // Unisce i dati dei due file in un unico array
+        allWines = [...pg3Data, ...pg4Data];
+        renderWines(allWines);
+        createFilters(allWines);
+    })
+    .catch(error => {
+        console.error('Si è verificato un errore:', error);
+        const grid = document.getElementById('wine-grid');
+        grid.innerHTML = '<p class="col-span-full text-center text-red-500 mt-16">Impossibile caricare la lista dei vini. Controlla i file JSON e riprova avviando il sito da un server locale (es. Live Server).</p>';
+    });
 
     function renderWines(winesToRender) {
         const wineGrid = document.getElementById('wine-grid');
@@ -31,9 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const groupedByRegion = winesToRender.reduce((acc, wine) => {
             const region = wine.region || 'REGIONE SCONOSCIUTA';
-            if (!acc[region]) {
-                acc[region] = [];
-            }
+            if (!acc[region]) acc[region] = [];
             acc[region].push(wine);
             return acc;
         }, {});
@@ -72,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     e.stopPropagation();
                     openModal(wine);
                 });
-                
+
                 wineGrid.appendChild(wineCard);
             });
         });
@@ -121,19 +123,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeBtn.addEventListener('click', closeModal);
     modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModal();
-        }
+        if (e.target === modal) closeModal();
     });
 
     function openModal(wine) {
-        // Popola il modale con i dati del vino
         document.getElementById('modal-wine-name').textContent = wine.wine_name || 'Nome Sconosciuto';
         document.getElementById('modal-producer').textContent = wine.producer || 'Cantina Sconosciuta';
         document.getElementById('modal-additional-info').textContent = wine.additional_information || 'Nessuna informazione aggiuntiva disponibile.';
         document.getElementById('modal-food-pairings').textContent = wine.food_pairings || 'Abbinamenti non specificati.';
 
-        // Scheda Tecnica
         const technicalSheetList = document.getElementById('modal-technical-sheet');
         technicalSheetList.innerHTML = '';
         if (wine.technical_sheet) {
@@ -149,19 +147,18 @@ document.addEventListener('DOMContentLoaded', () => {
             technicalSheetList.innerHTML = '<li>Nessuna scheda tecnica disponibile.</li>';
         }
 
-        // Note di Degustazione
         const tastingNotes = wine.tasting_notes || {};
         document.getElementById('modal-tasting-visual').textContent = tastingNotes.visual || 'Non specificato.';
         document.getElementById('modal-tasting-olfactory').textContent = tastingNotes.olfactory || 'Non specificato.';
         document.getElementById('modal-tasting-gustatory').textContent = tastingNotes.gustatory || 'Non specificato.';
 
-        // Rendi il modale visibile
         modal.style.display = 'flex';
-        document.body.style.overflow = 'hidden'; // Prevents scrolling on the main page
+        document.body.style.overflow = 'hidden';
     }
 
     function closeModal() {
         modal.style.display = 'none';
-        document.body.style.overflow = ''; // Re-enables scrolling
+        document.body.style.overflow = '';
     }
 });
+
