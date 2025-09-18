@@ -1,0 +1,986 @@
+[
+  {
+    "wine_name": "VERMENTINO DI GALLURA",
+    "producer": "SERENATA",
+    "denomination": "GALLURA DOCG 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "95% Vermentino minimum",
+      "terroir": "historic Gallura zone in northern Sardegna",
+      "alcohol_content": "13% Vol",
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": "straw yellow with greenish reflections",
+      "olfactory": "typically fine and elegant aromatic bouquet",
+      "gustatory": "balanced, soft, with a good structure"
+    },
+    "food_pairings": null,
+    "additional_information": "AROMATIC, ELEGANT PRODUCED IN THE HISTORIC GALLURA ZONE IN NORTHERN SARDEGNA"
+  },
+  {
+    "wine_name": "VERMENTINO",
+    "producer": "ARGIOLAS",
+    "denomination": "SARDEGNA DOCG 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Vermentino",
+      "terroir": "southern Sardegna",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "citrus, melon, herb",
+      "gustatory": "saline minerality"
+    },
+    "food_pairings": null,
+    "additional_information": "SOUTHERN ISLAND CLASSIC MADE BY A HISTORIC PRODUCER. CITRUS, MELON, HERB, SALINE MINERALITY"
+  },
+  {
+    "wine_name": "VERMENTINO-CHARDONNAY SAMAS",
+    "producer": "AGRICOLA PUNICA",
+    "denomination": "ISOLA DEI NURAGHI 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Vermentino, Chardonnay",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": null
+  },
+  {
+    "wine_name": "BIFERNO BIANCO",
+    "producer": "GIRONIA",
+    "denomination": "BIFERNO DOC 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "historic white grapes of Molise led by Trebbiano Molisano",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "white peach, citrus, apple, & wild flower",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "A CUVEE OF HISTORIC WHITE GRAPES OF MOLISE LED BY TREBBIANO MOLISANO. WHITE PEACH, CITRUS, APPLE, & WILD FLOWER"
+  },
+  {
+    "wine_name": "VINCENZO, TREBBIANO",
+    "producer": null,
+    "denomination": "CAMPOBASSO 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Trebbiano blend",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": "golden orange",
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "ORGANIC ORANGE TREBBIANO BLEND - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "TREBBIANO D'ABRUZZO",
+    "producer": "CATALDI MADONNA",
+    "denomination": "ABRUZZO DOP 2022/OFENA",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Trebbiano d'Abruzzo",
+      "terroir": "natural amphitheatre in the Gran Sasso",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "citrus, tropical fruit, acacia",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "A GEM MADE IN A NATURAL AMPHITHEATRE IN THE GRAN SASSO. CITRUS, TROPICAL FRUIT, ACACIA - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "PECORINO",
+    "producer": "PASSOFINO",
+    "denomination": "TERRE DI CHIETI IGT 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Pecorino",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "peach, papaya & citrus",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "PEACH, PAPAYA & CITRUS"
+  },
+  {
+    "wine_name": "TREBBIANO D'ABRUZZO",
+    "producer": "EMIDIO PEPE",
+    "denomination": "ABRUZZO DOP/TERAMO 2018",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "100% Trebbiano d'Abruzzo",
+      "terroir": "between the Adriatic Sea and the Gran Sasso mountain massif",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": "18-24 months in glass-lined cement tanks",
+      "first_vintage": null,
+      "harvest_period": "hand harvested",
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "mineral tone and beautiful flavor"
+    },
+    "food_pairings": null,
+    "additional_information": "ARTISANALLY HAND HARVESTED MASTERPIECE WITH DIVINE MINERAL COMPLEXITY. Foot trodden in wooden tubs, fermented with wild yeast, bottled unfiltered and unfined. 100% organic, biodynamic - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "TREBBIANO D'ABRUZZO",
+    "producer": "EMIDIO PEPE",
+    "denomination": "ABRUZZO DOP 2017/TERAMO",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "100% Trebbiano d'Abruzzo",
+      "terroir": "between the Adriatic Sea and the Gran Sasso mountain massif",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": "18-24 months in glass-lined cement tanks",
+      "first_vintage": null,
+      "harvest_period": "hand harvested",
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "mineral tone and beautiful flavor"
+    },
+    "food_pairings": null,
+    "additional_information": "BACK VINTAGE. Artisanally hand harvested masterpiece with divine mineral complexity. Foot trodden in wooden tubs, fermented with wild yeast, bottled unfiltered and unfined. 100% organic, biodynamic - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "CERASUOLO",
+    "producer": "ZACCAGNINI",
+    "denomination": "ABRUZZO DOP/PESCARA 2021",
+    "wine_type": "ROSATO",
+    "technical_sheet": {
+      "grape_varieties": null,
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "layered fruit & floral",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "LAYERED FRUIT & FLORAL"
+  },
+  {
+    "wine_name": "MONTEPULCIANO",
+    "producer": "PASSOFINO",
+    "denomination": "ABRUZZO DOP/CHIETI 2022",
+    "wine_type": "ROSATO",
+    "technical_sheet": {
+      "grape_varieties": "Montepulciano",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "STYLISH ROSÉ"
+  },
+  {
+    "wine_name": "MONTEPULCIANO",
+    "producer": "WINES OF ANARCHY",
+    "denomination": "ABRUZZO 2022/PESCARA",
+    "wine_type": "ROSATO",
+    "technical_sheet": {
+      "grape_varieties": "Montepulciano",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "ORGANIC, NATURAL - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "EST EST EST",
+    "producer": "FALESCO",
+    "denomination": "MONTEFIASCONE DOP 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Trebbiano, Malvasia, Roscetto",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "TREBBIANO, MALVASIA, ROSCETTO"
+  },
+  {
+    "wine_name": "FRASCATI",
+    "producer": "PALLAVICINI",
+    "denomination": "FRASCATI DOP 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": null,
+      "terroir": "hills of Rome",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "FROM THE HILLS OF ROME"
+  },
+  {
+    "wine_name": "BELLONE",
+    "producer": "CAST. GIGLIO",
+    "denomination": "LAZIO IGT/LATINA 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Bellone",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "tropical fruit",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "RARE NATIVE GRAPE, TROPICAL FRUIT"
+  },
+  {
+    "wine_name": "FERENTANO",
+    "producer": "COTARELLA",
+    "denomination": "LAZIO IGT/MONTEFIACONE 2018",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Rosceto",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": "white Burgundy style",
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "mandarin, yellow fruits, vanilla",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "HISTORIC ROSCETO GRAPE PRODUCED IN A WHITE BURGUNDY STYLE. MANDARIN, YELLOW FRUITS, VANILLA"
+  },
+  {
+    "wine_name": "PECORINO",
+    "producer": "VELENOSI",
+    "denomination": "OFFIDA DOCG 2023/ASCOLI",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Pecorino",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "citrus, floral, herbs",
+      "gustatory": "mineral"
+    },
+    "food_pairings": null,
+    "additional_information": "CITRUS, FLORAL, HERBS, MINERAL"
+  },
+  {
+    "wine_name": "VERDICCHIO DI MATELICA",
+    "producer": "V. MARILLA",
+    "denomination": "MATELICA DOC 2020",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Verdicchio",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "stone minerality"
+    },
+    "food_pairings": null,
+    "additional_information": "STONE MINERALITY"
+  },
+  {
+    "wine_name": "VERDICCHIO DEI CASTELLI DI JESI",
+    "producer": "LUCCHETTI",
+    "denomination": "CASTELLI DI JESI DOP 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Verdicchio",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "citrus, white peach, almonds",
+      "gustatory": "distinctive mineral finish"
+    },
+    "food_pairings": null,
+    "additional_information": "HISTORIC DOP OF LE MARCHE. CITRUS, WHITE PEACH, ALMONDS & DISTINCTIVE MINERAL FINISH - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "CHARDONNAY",
+    "producer": "BANFI",
+    "denomination": "TOSCANA IGT/MONTALCINO 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Chardonnay",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": "oaked",
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "vanilla & apricot",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "OAKED, VANILLA & APRICOT"
+  },
+  {
+    "wine_name": "TREBBIANO",
+    "producer": "L'ERTA",
+    "denomination": "TOSCANA IGT 2021/FIRENZE",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Trebbiano",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": "golden orange",
+      "olfactory": null,
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "ORGANIC, NATURAL GOLDEN ORANGE - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "VERNACCIA",
+    "producer": "LA LASTRA",
+    "denomination": "SAN GIMIGNANO DOCG 2023",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Vernaccia",
+      "terroir": "sandstone soil",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "sandstone soil minerality"
+    },
+    "food_pairings": null,
+    "additional_information": "SANDSTONE SOIL MINERALITY - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "VERMENTINO",
+    "producer": "PAGLIATURA",
+    "denomination": "MAREMMA DOC 2022",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Vermentino",
+      "terroir": "Tuscan Riviera",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "aromatic",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "AROMATIC, TUSCAN RIVIERA - Practices organic agricultural cultivation & protocol"
+  },
+  {
+    "wine_name": "ANSONICA",
+    "producer": "CECILIA",
+    "denomination": "ELBA DOC 2021",
+    "wine_type": "BIANCO",
+    "technical_sheet": {
+      "grape_varieties": "Ansonica",
+      "terroir": "Elba island",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "organoleptic_profile": {
+      "body": null,
+      "tannins": null,
+      "alcohol": null,
+      "persistence": null,
+      "acidity": null,
+      "complexity": null
+    },
+    "aromatic_profile": {
+      "fruity": null,
+      "floral": null,
+      "spicy": null,
+      "nutty": null,
+      "earthy": null,
+      "vegetal": null,
+      "mineral": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "apricot accents",
+      "gustatory": null
+    },
+    "food_pairings": null,
+    "additional_information": "ELBA ISLAND BEAUTY WITH APRICOT ACCENTS"
+  }
+]
