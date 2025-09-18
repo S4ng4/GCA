@@ -4,6 +4,7 @@
     "producer": "SERENATA",
     "denomination": "GALLURA DOCG 2023",
     "wine_type": "BIANCO",
+    "region": "SARDEGNA",
     "technical_sheet": {
       "grape_varieties": "95% Vermentino minimum",
       "terroir": "historic Gallura zone in northern Sardegna",
@@ -45,6 +46,7 @@
     "producer": "ARGIOLAS",
     "denomination": "SARDEGNA DOCG 2023",
     "wine_type": "BIANCO",
+    "region": "SARDEGNA",
     "technical_sheet": {
       "grape_varieties": "Vermentino",
       "terroir": "southern Sardegna",
@@ -86,6 +88,7 @@
     "producer": "AGRICOLA PUNICA",
     "denomination": "ISOLA DEI NURAGHI 2023",
     "wine_type": "BIANCO",
+    "region": "SARDEGNA",
     "technical_sheet": {
       "grape_varieties": "Vermentino, Chardonnay",
       "terroir": null,
@@ -127,6 +130,7 @@
     "producer": "GIRONIA",
     "denomination": "BIFERNO DOC 2022",
     "wine_type": "BIANCO",
+    "region": "MOLISE",
     "technical_sheet": {
       "grape_varieties": "historic white grapes of Molise led by Trebbiano Molisano",
       "terroir": null,
@@ -168,6 +172,7 @@
     "producer": null,
     "denomination": "CAMPOBASSO 2022",
     "wine_type": "BIANCO",
+    "region": "MOLISE",
     "technical_sheet": {
       "grape_varieties": "Trebbiano blend",
       "terroir": null,
@@ -209,6 +214,7 @@
     "producer": "CATALDI MADONNA",
     "denomination": "ABRUZZO DOP 2022/OFENA",
     "wine_type": "BIANCO",
+    "region": "ABRUZZO",
     "technical_sheet": {
       "grape_varieties": "Trebbiano d'Abruzzo",
       "terroir": "natural amphitheatre in the Gran Sasso",
@@ -250,6 +256,7 @@
     "producer": "PASSOFINO",
     "denomination": "TERRE DI CHIETI IGT 2023",
     "wine_type": "BIANCO",
+    "region": "ABRUZZO",
     "technical_sheet": {
       "grape_varieties": "Pecorino",
       "terroir": null,
@@ -291,6 +298,7 @@
     "producer": "EMIDIO PEPE",
     "denomination": "ABRUZZO DOP/TERAMO 2018",
     "wine_type": "BIANCO",
+    "region": "ABRUZZO",
     "technical_sheet": {
       "grape_varieties": "100% Trebbiano d'Abruzzo",
       "terroir": "between the Adriatic Sea and the Gran Sasso mountain massif",
@@ -332,6 +340,7 @@
     "producer": "EMIDIO PEPE",
     "denomination": "ABRUZZO DOP 2017/TERAMO",
     "wine_type": "BIANCO",
+    "region": "ABRUZZO",
     "technical_sheet": {
       "grape_varieties": "100% Trebbiano d'Abruzzo",
       "terroir": "between the Adriatic Sea and the Gran Sasso mountain massif",
@@ -373,6 +382,7 @@
     "producer": "ZACCAGNINI",
     "denomination": "ABRUZZO DOP/PESCARA 2021",
     "wine_type": "ROSATO",
+    "region": "ABRUZZO",
     "technical_sheet": {
       "grape_varieties": null,
       "terroir": null,
@@ -414,6 +424,7 @@
     "producer": "PASSOFINO",
     "denomination": "ABRUZZO DOP/CHIETI 2022",
     "wine_type": "ROSATO",
+    "region": "ABRUZZO",
     "technical_sheet": {
       "grape_varieties": "Montepulciano",
       "terroir": null,
@@ -455,6 +466,7 @@
     "producer": "WINES OF ANARCHY",
     "denomination": "ABRUZZO 2022/PESCARA",
     "wine_type": "ROSATO",
+    "region": "ABRUZZO",
     "technical_sheet": {
       "grape_varieties": "Montepulciano",
       "terroir": null,
@@ -496,6 +508,7 @@
     "producer": "FALESCO",
     "denomination": "MONTEFIASCONE DOP 2022",
     "wine_type": "BIANCO",
+    "region": "LAZIO",
     "technical_sheet": {
       "grape_varieties": "Trebbiano, Malvasia, Roscetto",
       "terroir": null,
@@ -537,6 +550,7 @@
     "producer": "PALLAVICINI",
     "denomination": "FRASCATI DOP 2023",
     "wine_type": "BIANCO",
+    "region": "LAZIO",
     "technical_sheet": {
       "grape_varieties": null,
       "terroir": "hills of Rome",
@@ -578,6 +592,7 @@
     "producer": "CAST. GIGLIO",
     "denomination": "LAZIO IGT/LATINA 2023",
     "wine_type": "BIANCO",
+    "region": "LAZIO",
     "technical_sheet": {
       "grape_varieties": "Bellone",
       "terroir": null,
@@ -619,6 +634,7 @@
     "producer": "COTARELLA",
     "denomination": "LAZIO IGT/MONTEFIACONE 2018",
     "wine_type": "BIANCO",
+    "region": "LAZIO",
     "technical_sheet": {
       "grape_varieties": "Rosceto",
       "terroir": null,
@@ -660,6 +676,7 @@
     "producer": "VELENOSI",
     "denomination": "OFFIDA DOCG 2023/ASCOLI",
     "wine_type": "BIANCO",
+    "region": "MARCHE",
     "technical_sheet": {
       "grape_varieties": "Pecorino",
       "terroir": null,
@@ -701,6 +718,7 @@
     "producer": "V. MARILLA",
     "denomination": "MATELICA DOC 2020",
     "wine_type": "BIANCO",
+    "region": "MARCHE",
     "technical_sheet": {
       "grape_varieties": "Verdicchio",
       "terroir": null,
@@ -742,6 +760,7 @@
     "producer": "LUCCHETTI",
     "denomination": "CASTELLI DI JESI DOP 2022",
     "wine_type": "BIANCO",
+    "region": "MARCHE",
     "technical_sheet": {
       "grape_varieties": "Verdicchio",
       "terroir": null,
@@ -783,6 +802,7 @@
     "producer": "BANFI",
     "denomination": "TOSCANA IGT/MONTALCINO 2022",
     "wine_type": "BIANCO",
+    "region": "TOSCANA",
     "technical_sheet": {
       "grape_varieties": "Chardonnay",
       "terroir": null,
@@ -824,6 +844,7 @@
     "producer": "L'ERTA",
     "denomination": "TOSCANA IGT 2021/FIRENZE",
     "wine_type": "BIANCO",
+    "region": "TOSCANA",
     "technical_sheet": {
       "grape_varieties": "Trebbiano",
       "terroir": null,
@@ -865,6 +886,7 @@
     "producer": "LA LASTRA",
     "denomination": "SAN GIMIGNANO DOCG 2023",
     "wine_type": "BIANCO",
+    "region": "TOSCANA",
     "technical_sheet": {
       "grape_varieties": "Vernaccia",
       "terroir": "sandstone soil",
@@ -906,6 +928,7 @@
     "producer": "PAGLIATURA",
     "denomination": "MAREMMA DOC 2022",
     "wine_type": "BIANCO",
+    "region": "TOSCANA",
     "technical_sheet": {
       "grape_varieties": "Vermentino",
       "terroir": "Tuscan Riviera",
@@ -947,6 +970,7 @@
     "producer": "CECILIA",
     "denomination": "ELBA DOC 2021",
     "wine_type": "BIANCO",
+    "region": "TOSCANA",
     "technical_sheet": {
       "grape_varieties": "Ansonica",
       "terroir": "Elba island",
@@ -983,4 +1007,5 @@
     "food_pairings": null,
     "additional_information": "ELBA ISLAND BEAUTY WITH APRICOT ACCENTS"
   }
+
 ]
