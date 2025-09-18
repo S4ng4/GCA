@@ -160,5 +160,12 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'none';
         document.body.style.overflow = '';
     }
+document.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    // Calcola una posizione dinamica per lo sfondo
+    document.body.style.backgroundPosition = `center ${scrollTop * 0.2}px`;
 });
+
+});
+
 
