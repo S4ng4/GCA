@@ -3,286 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wine List</title>
+    <title>Digital Wine List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Gran Caffe L'Aquila Inspired Color Palette */
+        /* Gran Caffe L'Aquila Inspired Color Palette - MANTENUTA */
         :root {
-            /* Primary Brand Colors - Warm Italian Coffee Tones */
             --espresso-dark: #2C1810;
-            /* Deep espresso brown */
             --coffee-brown: #4A2C17;
-            /* Rich coffee brown */
             --caffe-medium: #6B4423;
-            /* Medium roast */
             --latte-cream: #D4B896;
-            /* Creamy latte */
             --milk-foam: #F5EFE7;
-            /* Light cream foam */
-            /* Accent Colors - Italian Heritage */
             --italian-gold: #B8860B;
-            /* Warm gold accent */
             --vintage-brass: #CD7F32;
-            /* Aged brass */
             --terra-cotta: #A0522D;
-            /* Italian terracotta */
             --olive-green: #708238;
-            /* Italian olive */
-            /* Neutral Colors */
             --warm-white: #FDFBF7;
-            /* Warm off-white */
             --paper-beige: #F7F3E9;
-            /* Vintage paper */
             --stone-gray: #8B8680;
-            /* Italian stone */
             --charcoal: #3C3B37;
-            /* Dark charcoal */
-            /* UI Colors */
             --text-primary: var(--espresso-dark);
             --text-secondary: var(--coffee-brown);
             --text-muted: var(--stone-gray);
             --background: var(--warm-white);
             --surface: var(--paper-beige);
             --border: var(--latte-cream);
-            /* Interactive Colors */
             --primary: var(--coffee-brown);
             --primary-hover: var(--espresso-dark);
             --accent: var(--italian-gold);
             --accent-hover: var(--vintage-brass);
         }
 
-        /* Example Usage Classes */
-        .brand-primary {
-            color: var(--espresso-dark);
-        }
-
-        .brand-secondary {
-            color: var(--coffee-brown);
-        }
-
-        .accent-color {
-            color: var(--italian-gold);
-        }
-
-        .background-primary {
-            background-color: var(--warm-white);
-        }
-
-        .background-secondary {
-            background-color: var(--paper-beige);
-        }
-
-        .button-primary {
-            background-color: var(--coffee-brown);
-            color: var(--warm-white);
-            border: none;
-            padding: 12px 24px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-
-        .button-primary:hover {
-            background-color: var(--espresso-dark);
-        }
-
-        .button-accent {
-            background-color: var(--italian-gold);
-            color: var(--espresso-dark);
-            border: none;
-            padding: 12px 24px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-
-        .button-accent:hover {
-            background-color: var(--vintage-brass);
-        }
+        /* Stili riadattati del design precedente per integrarsi con Tailwind */
         body {
-    background: var(--warm-white) url('italy-map.png') no-repeat center top;
-    background-size: 40%;
-    background-attachment: fixed;
-    background-position: center 0;
-    transition: background-position 0.2s ease-out;
-}
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 40px;
+            /* Sfondo con immagine del vino */
+            background-image: url('https://media.philly.com/images/gran_over_0056_1024.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: background-color 0.5s ease;
+        }
 
+        /* Effetti per i temi di colore */
+        body.theme-rosso { background-image: linear-gradient(135deg, rgba(164, 35, 55, 0.2) 0%, rgba(252, 247, 247, 0.2) 100%), url('https://media.philly.com/images/gran_over_0056_1024.jpg'); }
+        body.theme-bianco { background-image: linear-gradient(135deg, rgba(183, 164, 43, 0.2) 0%, rgba(247, 252, 247, 0.2) 100%), url('https://media.philly.com/images/gran_over_0056_1024.jpg'); }
+        body.theme-rose { background-image: linear-gradient(135deg, rgba(229, 109, 141, 0.2) 0%, rgba(253, 247, 249, 0.2) 100%), url('https://media.philly.com/images/gran_over_0056_1024.jpg'); }
+        body.theme-bollicine { background-image: linear-gradient(135deg, rgba(93, 152, 168, 0.2) 0%, rgba(247, 249, 252, 0.2) 100%), url('https://media.philly.com/images/gran_over_0056_1024.jpg'); }
 
-        .card {
-            background-color: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
+        .wine-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        @keyframes fadeInSlideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Stili Vetromorfismo e Neumorfismo */
+        .wine-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            color: var(--text-primary);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: fadeInSlideIn 0.5s ease-out forwards;
+            cursor: pointer;
         }
 
-        .navbar {
-            background-color: var(--coffee-brown);
-            color: var(--warm-white);
+        .wine-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
         }
 
-        .footer {
-            background-color: var(--espresso-dark);
-            color: var(--latte-cream);
+        .category-filter button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2), -2px -2px 5px rgba(255,255,255,0.4);
+            transition: all 0.2s ease-in-out;
+            color: #fff;
+            font-weight: 600;
         }
 
-        /* Coffee Region Specific Colors (based on their 4 blends) */
-        .torino-blend {
-            background: linear-gradient(135deg, var(--latte-cream), var(--caffe-medium));
+        .category-filter button:active {
+            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2), inset -2px -2px 5px rgba(255,255,255,0.4);
+            transform: scale(0.98);
         }
 
-        .laquila-blend {
-            background: linear-gradient(135deg, var(--coffee-brown), var(--espresso-dark));
+        .category-filter button.active {
+            color: #555;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: inset 2px 2px 5px rgba(0,0,0,0.2), inset -2px -2px 5px rgba(255,255,255,0.4);
         }
 
-        .roma-blend {
-            background: linear-gradient(135deg, var(--terra-cotta), var(--coffee-brown));
-        }
-
-        .napoli-blend {
-            background: linear-gradient(135deg, var(--espresso-dark), #1a0e08);
-        }
-
-        /* Utility Classes */
-        .text-primary {
-            color: var(--text-primary);
-        }
-
-        .text-secondary {
-            color: var(--text-secondary);
-        }
-
-        .text-muted {
-            color: var(--text-muted);
-        }
-
-        .text-accent {
-            color: var(--accent);
-        }
-
-        .bg-primary {
-            background-color: var(--background);
-        }
-
-        .bg-secondary {
-            background-color: var(--surface);
-        }
-
-        .bg-accent {
-            background-color: var(--accent);
-        }
-
-        .border-primary {
-            border-color: var(--border);
-        }
-
-        .border-accent {
-            border-color: var(--accent);
-        }
-
-        /* Modal Specific Styles */
         .modal-overlay {
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.6);
-            display: none;
+            backdrop-filter: blur(5px);
+            z-index: 1000;
             justify-content: center;
             align-items: center;
-            z-index: 1000;
+            animation: fadeIn 0.3s forwards;
         }
 
         .modal-content {
-            background-color: var(--warm-white);
+            background-color: rgba(255, 255, 255, 0.95);
             padding: 2.5rem;
-            border-radius: 10px;
+            border-radius: 16px;
             max-width: 90%;
             max-height: 90%;
             overflow-y: auto;
             position: relative;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 0.3s ease-in-out;
-        }
-
-        .modal-close-btn {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            font-size: 1.5rem;
-            color: var(--text-muted);
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-
-        .modal-close-btn:hover {
-            color: var(--text-primary);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            animation: slideIn 0.4s forwards;
         }
 
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-        
-        .filter-active {
-            background-color: var(--coffee-brown);
-            color: var(--warm-white);
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
         
     </style>
 </head>
 <body class="bg-primary">
-    <header class="navbar p-6">
-        <div class="container mx-auto">
-            <h1 class="text-4xl font-bold font-serif">Wine List</h1>
-        </div>
+    <header class="text-center p-6">
+        <h1 class="text-4xl font-bold font-serif text-white drop-shadow-lg">Wine Collection</h1>
     </header>
 
-    <main class="container mx-auto p-4">
-        <section id="filters" class="my-6">
-            <div id="filter-container" class="flex flex-wrap gap-2">
-                </div>
-        </section>
-
-        <div id="wine-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <main class="container mx-auto p-4 flex gap-8">
+        <aside class="w-80 p-8 flex flex-col items-center bg-white/10 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg">
+            <h2 class="text-xl font-bold mb-6 text-white drop-shadow-md">FILTER WINES</h2>
+            
+            <div id="filter-container" class="flex flex-col gap-2 w-full">
+                <button data-category="all" class="category-filter-btn active">Tutti i Vini</button>
+                <button data-category="rosso" class="category-filter-btn">Rossi</button>
+                <button data-category="bianco" class="category-filter-btn">Bianchi</button>
+                <button data-category="rose" class="category-filter-btn">Rosé</button>
+                <button data-category="bollicine" class="category-filter-btn">Bollicine</button>
             </div>
+
+            <div id="dynamic-filters" class="flex-col gap-4 mt-6 w-full hidden">
+                <label for="region-filter" class="text-white drop-shadow-md">Regione</label>
+                <select id="region-filter" class="w-full p-2 bg-white/20 border border-white/30 rounded-md text-white">
+                    <option value="all">Tutte</option>
+                </select>
+
+                <label for="uva-filter" class="text-white drop-shadow-md">Uva</label>
+                <select id="uva-filter" class="w-full p-2 bg-white/20 border border-white/30 rounded-md text-white">
+                    <option value="all">Tutte</option>
+                </select>
+
+                <label for="producer-filter" class="text-white drop-shadow-md">Produttore</label>
+                <select id="producer-filter" class="w-full p-2 bg-white/20 border border-white/30 rounded-md text-white">
+                    <option value="all">Tutti</option>
+                </select>
+                
+                <label for="year-filter" class="text-white drop-shadow-md">Annata</label>
+                <select id="year-filter" class="w-full p-2 bg-white/20 border border-white/30 rounded-md text-white">
+                    <option value="all">Tutte</option>
+                </select>
+            </div>
+        </aside>
+
+        <section id="wine-grid" class="wine-list flex-grow">
+            </section>
     </main>
 
     <div id="wine-modal" class="modal-overlay">
         <div class="modal-content md:grid md:grid-cols-2 md:gap-8">
             <button class="modal-close-btn">&times;</button>
             
-            <div>
-                <h2 id="modal-wine-name" class="text-3xl font-bold mb-1 brand-primary"></h2>
-                <h3 id="modal-producer" class="text-xl font-light text-secondary mb-4"></h3>
-
-                <div class="additional-info mt-6">
-                    <h4 class="text-lg font-semibold mb-2">Informazioni Aggiuntive</h4>
-                    <p id="modal-additional-info" class="text-sm text-secondary"></p>
-                </div>
-                
-                <div class="food-pairings mt-4">
-                    <h4 class="text-lg font-semibold mb-2">Abbinamenti Gastronomici</h4>
-                    <p id="modal-food-pairings" class="text-sm text-secondary"></p>
-                </div>
+            <div class="text-center md:text-left">
+                <img id="modal-wine-image" src="" alt="Immagine del vino" class="w-40 h-auto mx-auto mb-4 md:mx-0">
+                <h2 id="modal-wine-name" class="text-3xl font-bold mb-1 text-black"></h2>
+                <h3 id="modal-producer" class="text-xl font-light text-gray-700 mb-4"></h3>
             </div>
 
             <div>
+                <p id="modal-description" class="text-base text-gray-600 leading-relaxed mb-6"></p>
+
                 <div class="technical-sheet">
-                    <h4 class="text-lg font-semibold mb-2 brand-primary">Scheda Tecnica</h4>
-                    <ul id="modal-technical-sheet" class="text-sm space-y-1 text-secondary">
+                    <h4 class="text-lg font-semibold mb-2 text-black">Scheda Tecnica</h4>
+                    <ul id="modal-technical-sheet" class="text-sm space-y-1 text-gray-700">
                         </ul>
                 </div>
                 
                 <div class="tasting-notes mt-6">
-                    <h4 class="text-lg font-semibold mb-2 brand-primary">Note di Degustazione</h4>
-                    <div class="space-y-4 text-secondary">
+                    <h4 class="text-lg font-semibold mb-2 text-black">Note di Degustazione</h4>
+                    <div class="space-y-4 text-gray-700">
                         <p><strong class="font-medium">Visive:</strong> <span id="modal-tasting-visual"></span></p>
                         <p><strong class="font-medium">Olfattive:</strong> <span id="modal-tasting-olfactory"></span></p>
                         <p><strong class="font-medium">Gustative:</strong> <span id="modal-tasting-gustatory"></span></p>
