@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Gran Caffe L'Aquila Inspired Color Palette - MANTENUTA */
+        /* Gran Caffe L'Aquila Inspired Color Palette */
         :root {
             --espresso-dark: #2C1810;
             --coffee-brown: #4A2C17;
@@ -36,24 +36,23 @@
             --accent-hover: var(--vintage-brass);
         }
 
-        /* Stili riadattati del design precedente per integrarsi con Tailwind */
         body {
             font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 40px;
-            /* Sfondo con immagine del vino */
-            background-image: url('https://media.philly.com/images/gran_over_0056_1024.jpg');
+            /* Nuovo sfondo e rimozione dello scorrimento */
+            background-image: url('BackgroundGca.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             transition: background-color 0.5s ease;
         }
 
-        /* Effetti per i temi di colore */
-        body.theme-rosso { background-image: linear-gradient(135deg, rgba(164, 35, 55, 0.2) 0%, rgba(252, 247, 247, 0.2) 100%), url('https://media.philly.com/images/gran_over_0056_1024.jpg'); }
-        body.theme-bianco { background-image: linear-gradient(135deg, rgba(183, 164, 43, 0.2) 0%, rgba(247, 252, 247, 0.2) 100%), url('https://media.philly.com/images/gran_over_0056_1024.jpg'); }
-        body.theme-rose { background-image: linear-gradient(135deg, rgba(229, 109, 141, 0.2) 0%, rgba(253, 247, 249, 0.2) 100%), url('https://media.philly.com/images/gran_over_0056_1024.jpg'); }
-        body.theme-bollicine { background-image: linear-gradient(135deg, rgba(93, 152, 168, 0.2) 0%, rgba(247, 249, 252, 0.2) 100%), url('https://media.philly.com/images/gran_over_0056_1024.jpg'); }
+        /* Effetti per i temi di colore con overlay scuro */
+        body.theme-rosso { background-image: linear-gradient(rgba(164, 35, 55, 0.4), rgba(164, 35, 55, 0.4)), url('BackgroundGca.png'); }
+        body.theme-bianco { background-image: linear-gradient(rgba(183, 164, 43, 0.4), rgba(183, 164, 43, 0.4)), url('BackgroundGca.png'); }
+        body.theme-rose { background-image: linear-gradient(rgba(229, 109, 141, 0.4), rgba(229, 109, 141, 0.4)), url('BackgroundGca.png'); }
+        body.theme-bollicine { background-image: linear-gradient(rgba(93, 152, 168, 0.4), rgba(93, 152, 168, 0.4)), url('BackgroundGca.png'); }
 
         .wine-list {
             display: grid;
@@ -65,7 +64,7 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        
+
         /* Stili Vetromorfismo e Neumorfismo */
         .wine-card {
             background: rgba(255, 255, 255, 0.15);
@@ -147,6 +146,19 @@
             from { transform: translateY(-50px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
+
+        /* Stili per la search bar */
+        #search-bar {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            width: 100%;
+        }
+        #search-bar::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
         
     </style>
 </head>
@@ -159,6 +171,10 @@
         <aside class="w-80 p-8 flex flex-col items-center bg-white/10 backdrop-blur-md rounded-2xl border border-white/30 shadow-lg">
             <h2 class="text-xl font-bold mb-6 text-white drop-shadow-md">FILTER WINES</h2>
             
+            <div class="w-full mb-4">
+                <input type="text" id="region-search" placeholder="Cerca per regione..." class="w-full p-2 rounded-md bg-white/20 text-white placeholder:text-white/80 border border-white/30 focus:outline-none focus:ring-1 focus:ring-white">
+            </div>
+
             <div id="filter-container" class="flex flex-col gap-2 w-full">
                 <button data-category="all" class="category-filter-btn active">Tutti i Vini</button>
                 <button data-category="rosso" class="category-filter-btn">Rossi</button>
