@@ -1,159 +1,5 @@
-// Array di dati dei vini
-const wines = [
-    {
-        category: 'rosso',
-        region: 'Toscana',
-        uva: 'Sangiovese',
-        producer: 'Cantina A',
-        year: 2018,
-        name: 'Chianti Classico',
-        price: '€35',
-        image: 'https://via.placeholder.com/100x150.png?text=Rosso',
-        description: 'Un vino rosso classico della Toscana.',
-        technical: { gradazione: '13.5%', formato: '750ml' },
-        tasting: {
-            visual: 'Rosso rubino intenso',
-            olfactory: 'Note di ciliegia e violetta',
-            gustatory: 'Corposo e persistente'
-        }
-    },
-    {
-        category: 'bianco',
-        region: 'Alto Adige',
-        uva: 'Gewürztraminer',
-        producer: 'Cantina B',
-        year: 2020,
-        name: 'Gewürztraminer',
-        price: '€25',
-        image: 'https://via.placeholder.com/100x150.png?text=Bianco',
-        description: 'Un bianco aromatico fresco.',
-        technical: { gradazione: '13%', formato: '750ml' },
-        tasting: {
-            visual: 'Giallo paglierino',
-            olfactory: 'Note di litchi e petali di rosa',
-            gustatory: 'Morbido e aromatico'
-        }
-    },
-    {
-        category: 'rosso',
-        region: 'Piemonte',
-        uva: 'Nebbiolo',
-        producer: 'Cantina C',
-        year: 2016,
-        name: 'Barolo DOCG',
-        price: '€80',
-        image: 'https://via.placeholder.com/100x150.png?text=Rosso',
-        description: 'Un Barolo di grande eleganza.',
-        technical: { gradazione: '14%', formato: '750ml' },
-        tasting: {
-            visual: 'Rosso granato',
-            olfactory: 'Note di rosa e spezie',
-            gustatory: 'Strutturato e persistente'
-        }
-    },
-    {
-        category: 'bollicine',
-        region: 'Veneto',
-        uva: 'Glera',
-        producer: 'Cantina D',
-        year: 2021,
-        name: 'Prosecco Superiore',
-        price: '€18',
-        image: 'https://via.placeholder.com/100x150.png?text=Bollicine',
-        description: 'Prosecco fresco e vivace.',
-        technical: { gradazione: '11%', formato: '750ml' },
-        tasting: {
-            visual: 'Giallo brillante',
-            olfactory: 'Fruttato e floreale',
-            gustatory: 'Fresco e leggero'
-        }
-    },
-    {
-        category: 'bianco',
-        region: 'Sicilia',
-        uva: 'Grillo',
-        producer: 'Cantina B',
-        year: 2022,
-        name: 'Grillo DOC',
-        price: '€22',
-        image: 'https://via.placeholder.com/100x150.png?text=Bianco',
-        description: 'Bianco siciliano fresco.',
-        technical: { gradazione: '12%', formato: '750ml' },
-        tasting: {
-            visual: 'Giallo paglierino',
-            olfactory: 'Note agrumate',
-            gustatory: 'Fresco e sapido'
-        }
-    },
-    {
-        category: 'rosso',
-        region: 'Puglia',
-        uva: 'Primitivo',
-        producer: 'Cantina A',
-        year: 2019,
-        name: 'Primitivo del Salento',
-        price: '€30',
-        image: 'https://via.placeholder.com/100x150.png?text=Rosso',
-        description: 'Rosso intenso dalla Puglia.',
-        technical: { gradazione: '14%', formato: '750ml' },
-        tasting: {
-            visual: 'Rosso profondo',
-            olfactory: 'Note di frutta matura',
-            gustatory: 'Morbido e ricco'
-        }
-    },
-    {
-        category: 'rose',
-        region: 'Puglia',
-        uva: 'Negroamaro',
-        producer: 'Cantina E',
-        year: 2021,
-        name: 'Rosato Negroamaro',
-        price: '€28',
-        image: 'https://via.placeholder.com/100x150.png?text=Rosé',
-        description: 'Rosato fresco e fruttato.',
-        technical: { gradazione: '12.5%', formato: '750ml' },
-        tasting: {
-            visual: 'Rosa tenue',
-            olfactory: 'Note di fragola',
-            gustatory: 'Fresco e delicato'
-        }
-    },
-    {
-        category: 'bianco',
-        region: 'Friuli',
-        uva: 'Pinot Grigio',
-        producer: 'Cantina F',
-        year: 2020,
-        name: 'Pinot Grigio',
-        price: '€20',
-        image: 'https://via.placeholder.com/100x150.png?text=Bianco',
-        description: 'Pinot Grigio fresco e versatile.',
-        technical: { gradazione: '12%', formato: '750ml' },
-        tasting: {
-            visual: 'Giallo chiaro',
-            olfactory: 'Note di pera',
-            gustatory: 'Fresco e fruttato'
-        }
-    },
-    {
-        category: 'rosso',
-        region: 'Toscana',
-        uva: 'Sangiovese',
-        producer: 'Cantina G',
-        year: 2019,
-        name: 'Brunello di Montalcino',
-        price: '€95',
-        image: 'https://via.placeholder.com/100x150.png?text=Rosso',
-        description: 'Brunello di grande struttura.',
-        technical: { gradazione: '14.5%', formato: '750ml' },
-        tasting: {
-            visual: 'Rosso rubino',
-            olfactory: 'Note di prugna e tabacco',
-            gustatory: 'Potente e complesso'
-        }
-    }
-];
+// Variabile per i dati dei vini
+let wines = [];
 
 // Selettori e elementi del DOM
 const categoryButtons = document.querySelectorAll('.category-filter-btn');
@@ -342,7 +188,18 @@ regionSearch.addEventListener('input', applyFilters);
 
 // Inizializzazione della pagina
 document.addEventListener('DOMContentLoaded', () => {
-    displayWines(wines);
-    updateTheme('all');
-    populateDynamicFilters(wines, 'all'); // Populate filters on load for "all"
+    // Carica i vini dal file JSON
+    fetch('wines.json')
+        .then(response => response.json())
+        .then(jsonData => {
+            wines = jsonData;
+            displayWines(wines);
+            updateTheme('all');
+            populateDynamicFilters(wines, 'all'); // Populate filters on load for "all"
+        })
+        .catch(error => {
+            console.error('Errore nel caricamento del file wines.json:', error);
+            // In caso di errore, mostra un messaggio
+            wineGridContainer.innerHTML = '<p class="text-white text-center col-span-full">Impossibile caricare i dati dei vini.</p>';
+        });
 });
