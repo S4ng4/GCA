@@ -33,6 +33,92 @@ if (
     console.error('Uno o più elementi richiesti non sono presenti nell\'HTML.');
 }
 
+// Funzione per convertire i dati JSON nella struttura attesa dall'app
+function convertWineData(jsonData) {
+    return jsonData.map(wine => {
+        // Determina la categoria in base al wine_type
+        let category = 'bianco'; // default
+        if (wine.wine_type) {
+            const type = wine.wine_type.toLowerCase();
+            if (type.includes('rosso')) category = 'rosso';
+            else if (type.includes('rosato') || type.includes('rosé')) category = 'rose';
+            else if (type.includes('bollicine') || type.includes('spumante')) category = 'bollicine';
+            else category = 'bianco';
+        }
+
+        // Estrai l'anno dalla denominazione se presente
+        const yearMatch = wine.denomination ? wine.denomination.match(/(\d{4})/) : null;
+        const year = yearMatch ? yearMatch[1] : 'N/A';
+
+        return {
+            name: wine.wine_name || 'Nome non disponibile',
+            producer: wine.producer || 'Produttore non specificato',
+            year: year,
+            region: wine.region || 'Regione non specificata',
+            uva: wine.technical_sheet?.grape_varieties || 'Vitigno non specificato',
+            category: category,
+            price: 'Prezzo su richiesta', // Placeholder dato che non è presente nei JSON
+            image: 'https://via.placeholder.com/150x200/7b0b2d/ffffff?text=Vino', // Placeholder
+            description: wine.additional_information || 'Descrizione non disponibile',
+            technical: {
+                'Denominazione': wine.denomination,
+                'Tipo': wine.wine_type,
+                'Regione': wine.region,
+                'Vitigni': wine.technical_sheet?.grape_varieties,
+                'Terroir': wine.technical_sheet?.terroir,
+                'Gradazione alcolica': wine.technical_sheet?.alcohol_content,
+                'Acidità': wine.technical_sheet?.acidity,
+                'Invecchiamento': wine.technical_sheet?.aging,
+                'Tappo': wine.technical_sheet?.cap
+            },
+            tasting: {
+                visual: wine.tasting_notes?.visual || '',
+                olfactory: wine.tasting_notes?.olfactory || '',
+                gustatory: wine.tasting_notes?.gustatory || ''
+            }
+        };
+    });
+}
+
+// Funzione per caricare i dati da più file JSON
+async function loadWineData() {
+    try {
+        console.log('Caricamento dati vini...');
+        
+        // Carica entrambi i file JSON
+        const [pg3Response, pg4Response] = await Promise.all([
+            fetch('pg3.json'),
+            fetch('pg4.json')
+        ]);
+
+        if (!pg3Response.ok || !pg4Response.ok) {
+            throw new Error('Errore nel caricamento dei file JSON');
+        }
+
+        const pg3Data = await pg3Response.json();
+        const pg4Data = await pg4Response.json();
+        
+        console.log('Dati pg3 caricati:', pg3Data.length, 'vini');
+        console.log('Dati pg4 caricati:', pg4Data.length, 'vini');
+
+        // Combina i dati e convertili nel formato corretto
+        const allWineData = [...pg3Data, ...pg4Data];
+        wines = convertWineData(allWineData);
+        
+        console.log('Vini totali processati:', wines.length);
+        console.log('Esempio vino convertito:', wines[0]);
+
+        // Inizializza la visualizzazione
+        displayWines(wines);
+        updateTheme('all');
+        populateDynamicFilters(wines, 'all');
+        
+    } catch (error) {
+        console.error('Errore nel caricamento dei dati dei vini:', error);
+        wineGridContainer.innerHTML = '<p class="text-white text-center col-span-full">Impossibile caricare i dati dei vini. Verifica che i file pg3.json e pg4.json siano presenti.</p>';
+    }
+}
+
 // Funzione per visualizzare le schede dei vini
 function displayWines(filteredWines) {
     wineGridContainer.innerHTML = '';
@@ -55,12 +141,26 @@ function displayWines(filteredWines) {
 
         card.style.animationDelay = `${index * 0.05}s`;
 
-        // Gestione del doppio clic
+        // Gestione del doppio clic per navigare alla pagina dettaglio
         card.addEventListener('dblclick', () => {
-            window.location.href = `wine-detail.html?wine=${encodeURIComponent(JSON.stringify(wine))}`;
+            // Salva i dati del vino convertiti nel formato atteso da wine-detail.html
+            const wineDetailData = {
+                wine_name: wine.name,
+                producer: wine.producer,
+                denomination: wine.technical?.Denominazione || '',
+                wine_type: wine.technical?.Tipo || wine.category.toUpperCase(),
+                region: wine.region,
+                technical_sheet: wine.technical,
+                tasting_notes: wine.tasting,
+                additional_information: wine.description,
+                food_pairings: 'Abbinamenti da definire' // Placeholder
+            };
+            
+            localStorage.setItem('selectedWine', JSON.stringify(wineDetailData));
+            window.location.href = `wine-detail.html`;
         });
 
-        // Gestione del singolo clic per il modale (se ancora desiderato)
+        // Gestione del singolo clic per il modale
         card.addEventListener('click', () => showWineProfile(wine));
 
         wineGridContainer.appendChild(card);
@@ -77,17 +177,19 @@ function showWineProfile(wine) {
     // Dettagli tecnici
     modalTechnicalSheet.innerHTML = '';
     if (wine.technical) {
-        for (const key in wine.technical) {
-            const li = document.createElement('li');
-            li.innerHTML = `<strong>${key}:</strong> ${wine.technical[key]}`;
-            modalTechnicalSheet.appendChild(li);
+        for (const [key, value] of Object.entries(wine.technical)) {
+            if (value) { // Solo se il valore esiste
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${key}:</strong> ${value}`;
+                modalTechnicalSheet.appendChild(li);
+            }
         }
     }
 
     // Note di degustazione
-    modalTastingVisual.textContent = wine.tasting?.visual || "";
-    modalTastingOlfactory.textContent = wine.tasting?.olfactory || "";
-    modalTastingGustatory.textContent = wine.tasting?.gustatory || "";
+    modalTastingVisual.textContent = wine.tasting?.visual || "Note visive non disponibili";
+    modalTastingOlfactory.textContent = wine.tasting?.olfactory || "Note olfattive non disponibili";
+    modalTastingGustatory.textContent = wine.tasting?.gustatory || "Note gustative non disponibili";
 
     wineModal.style.display = 'flex';
 }
@@ -107,13 +209,13 @@ window.addEventListener('click', (event) => {
 function populateDynamicFilters(wines, selectedCategory) {
     const relevantWines = selectedCategory === 'all' ? wines : wines.filter(wine => wine.category === selectedCategory);
 
-    const uniqueUvas = [...new Set(relevantWines.map(wine => wine.uva))].sort();
+    const uniqueUvas = [...new Set(relevantWines.map(wine => wine.uva).filter(uva => uva && uva !== 'Vitigno non specificato'))].sort();
     populateSelect(uvaFilter, uniqueUvas);
 
-    const uniqueProducers = [...new Set(relevantWines.map(wine => wine.producer))].sort();
+    const uniqueProducers = [...new Set(relevantWines.map(wine => wine.producer).filter(producer => producer && producer !== 'Produttore non specificato'))].sort();
     populateSelect(producerFilter, uniqueProducers);
 
-    const uniqueYears = [...new Set(relevantWines.map(wine => wine.year))].sort().reverse();
+    const uniqueYears = [...new Set(relevantWines.map(wine => wine.year).filter(year => year && year !== 'N/A'))].sort().reverse();
     populateSelect(yearFilter, uniqueYears);
 }
 
@@ -188,18 +290,5 @@ regionSearch.addEventListener('input', applyFilters);
 
 // Inizializzazione della pagina
 document.addEventListener('DOMContentLoaded', () => {
-    // Carica i vini dal file JSON
-    fetch('wines.json')
-        .then(response => response.json())
-        .then(jsonData => {
-            wines = jsonData;
-            displayWines(wines);
-            updateTheme('all');
-            populateDynamicFilters(wines, 'all'); // Populate filters on load for "all"
-        })
-        .catch(error => {
-            console.error('Errore nel caricamento del file wines.json:', error);
-            // In caso di errore, mostra un messaggio
-            wineGridContainer.innerHTML = '<p class="text-white text-center col-span-full">Impossibile caricare i dati dei vini.</p>';
-        });
+    loadWineData();
 });
