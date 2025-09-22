@@ -48,7 +48,6 @@
     "denomination": "SICILIA DOC/TRAPANI 2023",
     "wine_type": "BIANCO",
     "region": "SICILIA",
-    "image: 'https://buywinesonline.com/cdn/shop/files/ProductsPlanetaLaSegretaBianco2022.jpg?v=1689867275&width=900'",
     "technical_sheet": {
       "grape_varieties": "Grillo",
       "terroir": null,
@@ -884,4 +883,5 @@
     "additional_information": "AMALFI COAST, TINTORE GRAPE - Practices organic agricultural cultivation & protocol"
   }
 ]
+
 
