@@ -1,0 +1,680 @@
+```json
+[
+  {
+    "wine_name": "ASSISI BIANCO",
+    "producer": "SPORLOTTI",
+    "denomination": "ASSISI DOP 2022",
+    "wine_type": "BIANCO",
+    "region": "UMBRIA",
+    "price_glass": null,
+    "price_bottle": "44",
+    "technical_sheet": {
+      "grape_varieties": "100% Grechetto",
+      "terroir": "Assisi",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "notes of golden apple, white peach & jasmine",
+      "gustatory": null
+    },
+    "additional_information": "FROM THE HOME OF ST. FRANCIS"
+  },
+  {
+    "wine_name": "ORVIETO",
+    "producer": "ARGILLE",
+    "denomination": "ORVIETO SUPERIORE DOC 2022",
+    "wine_type": "BIANCO",
+    "region": "UMBRIA",
+    "price_glass": null,
+    "price_bottle": "49",
+    "technical_sheet": {
+      "grape_varieties": "Grechetto, Malvasia",
+      "terroir": "medieval town of Orvieto",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "notes of citrus, mango, wild flower, mineral",
+      "gustatory": null
+    },
+    "additional_information": "GRECHETTO MALVASIA BLEND FROM THE MEDIEVAL TOWN OF ORVIETO"
+  },
+  {
+    "wine_name": "VERMENTINO",
+    "producer": "BRUNA",
+    "denomination": "RIVIERA PONENTE DOC 2023",
+    "wine_type": "BIANCO",
+    "region": "LIGURIA",
+    "price_glass": null,
+    "price_bottle": "57",
+    "technical_sheet": {
+      "grape_varieties": "Vermentino",
+      "terroir": "Mediterranean coast",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "romantic floral & herbal notes, mandarine",
+      "gustatory": "fresh salinity from the nearby Mediterranean Sea"
+    },
+    "additional_information": "PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "PIGATO",
+    "producer": "BRUNA",
+    "denomination": "RIVIERA PONENTE 2023",
+    "wine_type": "BIANCO",
+    "region": "LIGURIA",
+    "price_glass": null,
+    "price_bottle": "57",
+    "technical_sheet": {
+      "grape_varieties": "Pigato",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "floral, ocean breeze",
+      "gustatory": null
+    },
+    "additional_information": "PIGATO MASTER - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "CINQUE TERRE",
+    "producer": "POSSA",
+    "denomination": "CINQUE TERRE DOP 2023",
+    "wine_type": "BIANCO",
+    "region": "LIGURIA",
+    "price_glass": null,
+    "price_bottle": "79",
+    "technical_sheet": {
+      "grape_varieties": "Bosco, Picabon, Barbarossa, Vermentino, Rossese Bianco",
+      "terroir": "Cinque Terre",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "additional_information": "LOVELY BLEND FROM 5 TOWNS OF PARADISE - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "MALVASIA",
+    "producer": "LA COLLINA",
+    "denomination": "EMILIA IGT/REGGIO 2022",
+    "wine_type": "BIANCO",
+    "region": "EMILIA-ROMAGNA",
+    "price_glass": null,
+    "price_bottle": "49",
+    "technical_sheet": {
+      "grape_varieties": "Malvasia",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "effervescent, floral & citrus",
+      "gustatory": null
+    },
+    "additional_information": "EFFERVESCENT - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "PIGNOLETTO",
+    "producer": "ORSI",
+    "denomination": "COLLI BOLOGNESI, 2022",
+    "wine_type": "BIANCO",
+    "region": "EMILIA-ROMAGNA",
+    "price_glass": null,
+    "price_bottle": "49",
+    "technical_sheet": {
+      "grape_varieties": "Pignoletto",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": "aged on the lees with second fermentation in bottle",
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "effervescent natural local wine"
+    },
+    "additional_information": "EFFERVESCENT NATURAL LOCAL WINE AGED ON THE LEES WITH SECOND FERMENTATION IN BOTTLE. OLD SCHOOL STYLE - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "LAMBRUSCO BIANCO",
+    "producer": "LINI",
+    "denomination": "EMILIA-IGT/REGGIO 2022",
+    "wine_type": "BIANCO",
+    "region": "EMILIA-ROMAGNA",
+    "price_glass": null,
+    "price_bottle": "45",
+    "technical_sheet": {
+      "grape_varieties": "100% Salamino",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "fizzy and delicious rare white Lambrusco"
+    },
+    "additional_information": "FIZZY AND DELICIOUS RARE WHITE LAMBRUSCO"
+  },
+  {
+    "wine_name": "SET E MEZ",
+    "producer": "FORTANA",
+    "denomination": "EMILIA IGT/FERRARA",
+    "wine_type": "ROSATO",
+    "region": "EMILIA-ROMAGNA",
+    "price_glass": null,
+    "price_bottle": "47",
+    "technical_sheet": {
+      "grape_varieties": null,
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": "double fermented",
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "frizzante"
+    },
+    "additional_information": "FRIZZANTE, ORGANIC, DOUBLE FERMENTED - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "IL FARNETO",
+    "producer": "GIANDON",
+    "denomination": "EMILIA NV/REGGIO",
+    "wine_type": "ROSATO",
+    "region": "EMILIA-ROMAGNA",
+    "price_glass": null,
+    "price_bottle": "49",
+    "technical_sheet": {
+      "grape_varieties": "Lambrusco, Marzemino, Malbo Gentile",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "subtle plum & forest floor notes",
+      "gustatory": "fun effervescent rosé"
+    },
+    "additional_information": "FUN EFFERVESCENT ROSÉ - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "PROSECCO",
+    "producer": "LA VILLA",
+    "denomination": "PROSECCO DOC",
+    "wine_type": "BOLLICINE",
+    "region": "VENETO",
+    "price_glass": "11.5",
+    "price_bottle": "46",
+    "technical_sheet": {
+      "grape_varieties": "Glera",
+      "terroir": "Veneto",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "dry yet fruity"
+    },
+    "additional_information": "DRY YET FRUITY VENETIAN GEM"
+  },
+  {
+    "wine_name": "PROSECCO SUPERIORE",
+    "producer": "NINO FRANCO",
+    "denomination": "VALDOBBIADENE DOCG",
+    "wine_type": "BOLLICINE",
+    "region": "VENETO",
+    "price_glass": null,
+    "price_bottle": "54",
+    "technical_sheet": {
+      "grape_varieties": "Glera",
+      "terroir": "Valdobbiadene",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "floral",
+      "gustatory": null
+    },
+    "additional_information": "FLORAL"
+  },
+  {
+    "wine_name": "PROSECCO SUPERIORE 375 ML",
+    "producer": "SANTA MARGHERITA",
+    "denomination": "VALDOBBIADENE DOCG",
+    "wine_type": "BOLLICINE",
+    "region": "VENETO",
+    "price_glass": null,
+    "price_bottle": "36",
+    "technical_sheet": {
+      "grape_varieties": "Glera",
+      "terroir": "Valdobbiadene",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "additional_information": "375 ML BOTTLE"
+  },
+  {
+    "wine_name": "CHIARETTO SPUMANTE",
+    "producer": "CASETTO",
+    "denomination": "BARDOLINO DOP",
+    "wine_type": "BOLLICINE",
+    "region": "VENETO",
+    "price_glass": null,
+    "price_bottle": "46",
+    "technical_sheet": {
+      "grape_varieties": null,
+      "terroir": "Bardolino",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "brut, sparkling & bright"
+    },
+    "additional_information": "BRUT, SPARKLING & BRIGHT"
+  },
+  {
+    "wine_name": "MILLESIMATO SOAVE VINTAGE BRUT",
+    "producer": "TAMELLINI",
+    "denomination": "SOAVE 2020",
+    "wine_type": "BOLLICINE",
+    "region": "VENETO",
+    "price_glass": null,
+    "price_bottle": "59",
+    "technical_sheet": {
+      "grape_varieties": "100% Garganega",
+      "terroir": "Soave",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": "double fermentation in bottle",
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "peach, apple, crème brûlée",
+      "gustatory": null
+    },
+    "additional_information": "FROM SOAVE 100% GARGANEGA. DOUBLE FERMENTATION IN BOTTLE - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "LUGANA",
+    "producer": "ALLEGRINI",
+    "denomination": "LUGANA DOC 2023",
+    "wine_type": "BIANCO",
+    "region": "VENETO",
+    "price_glass": "12.9",
+    "price_bottle": "49",
+    "technical_sheet": {
+      "grape_varieties": "Turbiana",
+      "terroir": "Lake Garda",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "fruity & crisp"
+    },
+    "additional_information": "FRUITY & CRISP LAKE GARDA CLASSIC"
+  },
+  {
+    "wine_name": "GLERA IGT",
+    "producer": "MONGARDA",
+    "denomination": "VENETO 2021",
+    "wine_type": "BIANCO",
+    "region": "VENETO",
+    "price_glass": null,
+    "price_bottle": "48",
+    "technical_sheet": {
+      "grape_varieties": "Glera",
+      "terroir": "Veneto",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": "notes of citrus, apple, brioche & acacia flowers",
+      "gustatory": "artisanally fermented frizzante"
+    },
+    "additional_information": "PROSECCO GRAPE ARTISANALLY FERMENTED FRIZZANTE - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "SOAVE SUPERIORE",
+    "producer": "PIEROPAN",
+    "denomination": "SOAVE DOC 2024",
+    "wine_type": "BIANCO",
+    "region": "VENETO",
+    "price_glass": "12.9",
+    "price_bottle": "49",
+    "technical_sheet": {
+      "grape_varieties": "Garganega",
+      "terroir": "Soave",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "additional_information": "HISTORIC PREMIUM SOAVE - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "SOAVE LA ROCCA",
+    "producer": "PIEROPAN",
+    "denomination": "SOAVE DOC, 2023",
+    "wine_type": "BIANCO",
+    "region": "VENETO",
+    "price_glass": null,
+    "price_bottle": "82",
+    "technical_sheet": {
+      "grape_varieties": "100% Garganega",
+      "terroir": "La Rocca cru in the Soave hills",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": "12 months in oak",
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "Burgundian style"
+    },
+    "additional_information": "100% GARGANEGA MASTERWORK FROM THE LA ROCCA CRU IN THE SOAVE HILLS. BURGUNDIAN STYLE - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "CHIARETTO",
+    "producer": "BARDOLINI CASETTO",
+    "denomination": "BARDOLINO DOP 2022",
+    "wine_type": "ROSATO",
+    "region": "VENETO",
+    "price_glass": null,
+    "price_bottle": "39",
+    "technical_sheet": {
+      "grape_varieties": null,
+      "terroir": "Lake Garda",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "Lake Garda fruity rosé"
+    },
+    "additional_information": "LAKE GARDA FRUITY ROSÉ"
+  },
+  {
+    "wine_name": "FRIULANO",
+    "producer": "SCARBOLO",
+    "denomination": "FRIULI DOC/UDINE 2022",
+    "wine_type": "BIANCO",
+    "region": "FRIULI-VENEZIA GIULIA",
+    "price_glass": null,
+    "price_bottle": "49",
+    "technical_sheet": {
+      "grape_varieties": "Friulano",
+      "terroir": "Friuli",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "additional_information": "HISTORIC TOCAI OF FRIULI - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "RIBOLLA GIALLA",
+    "producer": "JERMANN",
+    "denomination": "FRIULI DOC 2022/GORIZIA",
+    "wine_type": "BIANCO",
+    "region": "FRIULI-VENEZIA GIULIA",
+    "price_glass": null,
+    "price_bottle": "59",
+    "technical_sheet": {
+      "grape_varieties": "Ribolla Gialla",
+      "terroir": "Friuli",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "elegant, zesty, fruity"
+    },
+    "additional_information": "ELEGANT, ZESTY, FRUITY - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "PINOT GRIGIO",
+    "producer": "JERMANN",
+    "denomination": "FRIULI DOC 2022/GORIZIA",
+    "wine_type": "BIANCO",
+    "region": "FRIULI-VENEZIA GIULIA",
+    "price_glass": null,
+    "price_bottle": "69",
+    "technical_sheet": {
+      "grape_varieties": "Pinot Grigio",
+      "terroir": "Friuli",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": null
+    },
+    "additional_information": "ROCK STAR WINEMAKER - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "CHARDONNAY",
+    "producer": "VIE DE ROMANS",
+    "denomination": "ISONZO DOC/GORIZIA 2022",
+    "wine_type": "BIANCO",
+    "region": "FRIULI-VENEZIA GIULIA",
+    "price_glass": null,
+    "price_bottle": "99",
+    "technical_sheet": {
+      "grape_varieties": "Chardonnay",
+      "terroir": "Isonzo",
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "delicate oak"
+    },
+    "additional_information": "DELICATE OAK"
+  },
+  {
+    "wine_name": "DREAMS",
+    "producer": "JERMANN",
+    "denomination": "VENEZIA GIULIA IGT 2020/GORIZIA",
+    "wine_type": "BIANCO",
+    "region": "FRIULI-VENEZIA GIULIA",
+    "price_glass": null,
+    "price_bottle": "149",
+    "technical_sheet": {
+      "grape_varieties": "Chardonnay",
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "Chardonnay masterpiece"
+    },
+    "additional_information": "CHARDONNAY MASTERPIECE - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  },
+  {
+    "wine_name": "VINTAGE TUNINA",
+    "producer": "JERMANN",
+    "denomination": "VENEZIA GIULIA IGT 2022/GORIZIA",
+    "wine_type": "BIANCO",
+    "region": "FRIULI-VENEZIA GIULIA",
+    "price_glass": null,
+    "price_bottle": "149",
+    "technical_sheet": {
+      "grape_varieties": null,
+      "terroir": null,
+      "alcohol_content": null,
+      "acidity": null,
+      "aging": null,
+      "first_vintage": null,
+      "harvest_period": null,
+      "longevity": null,
+      "cap": null
+    },
+    "tasting_notes": {
+      "visual": null,
+      "olfactory": null,
+      "gustatory": "poetic blend"
+    },
+    "additional_information": "POETIC BLEND - PRACTICES ORGANIC AGRICULTURAL CULTIVATION & PROTOCOL"
+  }
+]
+```
